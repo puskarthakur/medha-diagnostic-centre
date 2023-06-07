@@ -1,0 +1,10 @@
+.header{
+    background-color: antiquewhite;
+    height: 4.5rem !important;
+    display: flex;
+    flex-direction: row;
+}
+
+.css-1q9uik-MuiInputBase-root {
+width: '99% !important'
+}
