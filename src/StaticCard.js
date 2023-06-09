@@ -9,6 +9,11 @@ import { useNavigate } from "react-router-dom";
 
 
 export function StaticCard() {
+
+    const redirect=()=>{
+      window.location.href="//api.whatsapp.com/send?phone=919602178333"
+    }
+
     const navigate = useNavigate()
     return(
        
@@ -18,7 +23,7 @@ export function StaticCard() {
                     
                     <Button size="small"  variant="text"  className="verticalText-btn"  onClick={()=> navigate('/appoint')}><EventIcon/>Book an <br></br> Appointment</Button>
                     <Button size="small"  variant="text"  className="verticalText-btn" onClick={()=> navigate('/sample')}><EventIcon/>Home Sample <br></br> Collection</Button>
-                    <Button size="small"  variant="text"  className="verticalText-btn"><WhatsAppIcon/>Chat on<br></br> Whatsapp</Button>
+                    <Button size="small"  variant="text"  className="verticalText-btn" onClick={redirect} ><WhatsAppIcon/>Chat on<br></br> Whatsapp</Button>
                 </CardActions>
             </Card>
        
