@@ -1,27 +1,28 @@
 import React from "react";
-import Header from './Header';
-import { Navbar } from "./Navbar";
+// import Header from './Header';
+// import { Navbar } from "./Navbar";
 import Booktest from "./Booktest";
-import { Slideshow } from './Slideshow'
+import Slideshow from './Slideshow'
 import Grid from '@mui/material/Grid';
-function Home (){
-    return(
+// import { StaticCard } from './StaticCard'
+function Home() {
+    return (
         <div>
-            <Navbar></Navbar>
-            <Header></Header>
-            <Grid container spacing={2}>
-  <Grid item xs={8}>
-  <Slideshow></Slideshow>
-  </Grid>
-  <Grid item xs={2}>
-  <Booktest></Booktest>
-  </Grid>
-  <Grid item xs={2}>
-  </Grid>
-  </Grid>
+          
+            <Grid container spacing={1}>
+                <Grid item xs={7} >
+                    <Slideshow></Slideshow>
+                </Grid>
+                <Grid item xs={4} sx={{ padding: '0' }}>
+                    <Booktest></Booktest>
+                </Grid>
+       
 
-           
-           
+            </Grid>
+
+
+
+
         </div>
     )
 }

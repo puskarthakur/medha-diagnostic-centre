@@ -1,4 +1,4 @@
-import './Search.css';
+import './styles/Search.css';
 import SearchIcon from '@mui/icons-material/Search'
 export function Search() {
   return (

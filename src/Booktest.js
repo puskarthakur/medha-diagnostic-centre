@@ -9,43 +9,43 @@ import Typography from '@mui/material/Typography';
 import Search from './Search';
 import Card from '@mui/material/Card';
 
+
+
+const StyledCardActions = styled(CardActions)(({ theme }) => ({
+    display: 'flex !important',
+    flexDirection: 'column',
+    justifyContent: 'space-between !important',
+    marginBottom: '8px'
+}));
+const StyledTypography = styled(Typography)(({ theme }) => ({
+    textAlign: 'center'
+}));
+
 const StyledButton = styled(Button)(({ theme }) => ({
-    backgroundColor: '#019a5d',
-      margin: '8px'
-  }));
-  
-  const StyledCardActions = styled(CardActions)(({ theme }) => ({
-    display: 'flex',
-    flexDirection:'column',
-    justifyContent: 'space-between',
-  }));
-  const StyledTypography = styled(Typography)(({ theme }) => ({
-textAlign:'center'
-  }));
-  
+    marginTop: '13px'
+}));
 
 
+function Booktest() {
+    return (
 
-function Booktest(){
-    return(
-    
-        
-           <Card>
-        <CardContent>
-          <StyledTypography variant="h5" component="div">
-            Book a Online Test
-          </StyledTypography>
-     
-        </CardContent>
-        <StyledCardActions>
-         <Search></Search>
-          <StyledButton size="small" variant='contained'>Packages</StyledButton>
-          <StyledButton size="small" variant='contained'>MEDHA ADVANTAGE PLAN</StyledButton>
-        </StyledCardActions>
-        </Card>
-      
+        <div className='card'>
+            <Card >
+                <CardContent>
+                    <StyledTypography variant="h6" component="div">
+                        Book a Online Test
+                    </StyledTypography>
 
-  
+                </CardContent>
+                <StyledCardActions>
+                    <Search></Search>
+                    <StyledButton size="small" variant='contained' className='btn'>Packages</StyledButton>
+                    <StyledButton size="small" variant='contained' className='btn'>MEDHA ADVANTAGE PLAN</StyledButton>
+                </StyledCardActions>
+            </Card>
+
+        </div>
+
     )
 }
 

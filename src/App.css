@@ -1,4 +1,4 @@
-.header{
+.header {
     background-color: antiquewhite;
     height: 4.5rem !important;
     display: flex;
@@ -6,5 +6,52 @@
 }
 
 .css-1q9uik-MuiInputBase-root {
-width: '99% !important'
+    width: '99% !important'
+}
+
+.btn {
+    background-color: #019a5d !important;
+}
+
+
+.card {
+    padding: 20px 0px;
+    width: fit-content;
+}
+
+
+.verticalText-btn{
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize !important;
+    color: white !important;
+    padding: 10px 4px !important;
+
+}
+.staticcard {
+    background-color: #019a5d;
+   
+
+}
+.static{
+    width:max-content;
+    background-color: #019a5d !important;
+    border-radius: 15px !important;
+    position: fixed;
+    z-index: 999;
+    right: 7px;
+    top:117px
+}
+
+
+
+
+/* To reduce the height of text field */
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    height: 0.4375em !important;
+}
+
+/* To reduce the height of Autocomplete */
+.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+    height: 0.4375em !important;
 }
