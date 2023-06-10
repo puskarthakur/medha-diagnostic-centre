@@ -24,6 +24,7 @@ export function StaticCard() {
                     <Button size="small"  variant="text"  className="verticalText-btn"  onClick={()=> navigate('/appoint')}><EventIcon/>Book an <br></br> Appointment</Button>
                     <Button size="small"  variant="text"  className="verticalText-btn" onClick={()=> navigate('/sample')}><EventIcon/>Home Sample <br></br> Collection</Button>
                     <Button size="small"  variant="text"  className="verticalText-btn" onClick={redirect} ><WhatsAppIcon/>Chat on<br></br> Whatsapp</Button>
+                
                 </CardActions>
             </Card>
        

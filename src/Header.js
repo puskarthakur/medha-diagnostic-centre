@@ -13,6 +13,7 @@ import { Button } from '@mui/material';
 import { Search } from './Search';
 import UploadIcon from '@mui/icons-material/Upload';
 import DownloadIcon from '@mui/icons-material/Download';
+import { useNavigate } from 'react-router-dom';
 
 
 const StyledAppbar = styled(AppBar)(({ theme }) => ({
@@ -54,7 +55,9 @@ const StyledIconButton = styled(IconButton)(({ theme }) => ({
 // }));
 
 
-export default function header() {
+export default function Header() {
+
+    const navigate = useNavigate()
     return (
       
             <StyledAppbar position="fixed" sx={{top:'40px'}}>
@@ -68,7 +71,7 @@ export default function header() {
                             <Search></Search>
                         </Grid>
                         <Grid item md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
-                            <Button size="small" variant='contained' className='btn'>MEDHA ADVANTAGE PLAN</Button>
+                            <Button size="small" variant='contained' className='btn' onClick={()=>navigate('/plan')}>MEDHA ADVANTAGE PLAN</Button>
                         </Grid>
 
 
