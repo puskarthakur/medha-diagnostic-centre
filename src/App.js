@@ -2,7 +2,7 @@
 import './App.css';
 import { Navbar } from './Navbar';
 import Header from './Header'
-import { StaticCard } from './StaticCard';
+// import { StaticCard } from './StaticCard';
 import { Routes } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import Home from './Home';
@@ -12,6 +12,8 @@ import Upload from './Upload';
 import Advantage from './Advantage';
 import Cart from './Cart'
 import Partner from './Partner'
+import Healthcheck from './Healthcheck';
+import Diagnostic from './Diagnostic';
 
 
 function App() {
@@ -19,7 +21,7 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Header></Header>
-      <StaticCard></StaticCard>
+      {/* <StaticCard></StaticCard> */}
       <Routes>
         <Route path="/home" element={<Home/>}></Route>
         <Route path="/appoint" element={<Appointment/>}></Route>
@@ -28,6 +30,8 @@ function App() {
         <Route path="/plan" element={<Advantage/>}></Route>
         <Route path="/cart" element={<Cart/>}></Route>
         <Route path="/partner" element={<Partner/>}></Route>
+        <Route path="/check" element={<Healthcheck/>}></Route>
+        <Route path="/diagnos" element={<Diagnostic/>}></Route>
       </Routes>
     </div>
   );

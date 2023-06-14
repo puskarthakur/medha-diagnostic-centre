@@ -143,3 +143,34 @@
     background-color: white !important;
     margin-right: 1.3rem !important;
 }
+.hc .p-container{
+  
+    padding: 1.5em 4em;
+}
+.hc{
+    padding-bottom: 3rem;
+}
+.hc .package-text{
+    margin-top: 0;
+    margin-bottom: 0 !important;
+    padding: 0rem 1.4rem;
+}
+.hc .package {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DAF8F7;
+    padding: 1.5em 4em;
+}
+.diagnos .section-heading {
+    display: flex;
+    align-items: center;
+    background-color: #DAF8F7;
+    padding: 1.5em 2em;
+}
+.diagnos .p-container{
+    padding: 1.5em 4em;   
+}
+.diagnos {
+    padding-bottom: 4rem;
+}
