@@ -4,6 +4,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import PersonIcon from '@mui/icons-material/Person';
 import './styles/Navbar.css';
+import { useNavigate } from 'react-router-dom';
 
 
 // const pages = ['Home', 'About Us', 'Tests/Packages', 'Services', 'Partner with us', 'Why Medha'];
@@ -38,18 +39,19 @@ const navroute = [
 
 
 export function Navbar() {
+  const navigate = useNavigate()
   return (
     <div id="menu">
       <ul className='bar'>
 
         {navroute.map((page) => (
-          <li key={page.name}
+          <li key={page.name} onClick={()=>navigate(page.path)}
           >{page.name} </li>
         ))}
         <div>
-          <Button startIcon={<PhoneIcon />}>7849930383</Button>
-          <Button startIcon={<WhatsAppIcon />}>67388399399</Button>
-          <Button startIcon={<PersonIcon />}>Sign in</Button>
+          <Button className="navbar-button" startIcon={<PhoneIcon />}>7849930383</Button>
+          <Button className="navbar-button" startIcon={<WhatsAppIcon />}>67388399399</Button>
+          <Button  className="navbar-button" startIcon={<PersonIcon />}>Sign in</Button>
         </div>
 
       </ul>

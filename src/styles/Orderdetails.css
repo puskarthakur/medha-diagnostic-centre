@@ -1,0 +1,29 @@
+
+.order-heading {
+    font-size: 1em;
+    color: #383838;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.order-list{
+    background-color: #019a5d;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 8px;
+    color: white;
+
+}
+
+.order-heading {
+    padding:  0.42rem 0rem;
+    background-color: #019a5d;
+    color: white;
+    font-size: 1em;
+  
+}

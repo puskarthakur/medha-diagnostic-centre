@@ -10,6 +10,8 @@ import Appointment from './Appointment';
 import Sample from './Sample';
 import Upload from './Upload';
 import Advantage from './Advantage';
+import Cart from './Cart'
+import Partner from './Partner'
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
         <Route path="/sample" element={<Sample/>}></Route>
         <Route path="/upload" element={<Upload/>}></Route>
         <Route path="/plan" element={<Advantage/>}></Route>
+        <Route path="/cart" element={<Cart/>}></Route>
+        <Route path="/partner" element={<Partner/>}></Route>
       </Routes>
     </div>
   );

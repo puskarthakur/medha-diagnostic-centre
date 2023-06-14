@@ -17,9 +17,12 @@ export default function Featurecard(props) {
         <Typography variant="subtitle2"  >
         {props.content}
         </Typography>
+        <Typography variant="subtitle2"  >
+        {props.price}
+        </Typography>
       </CardContent>
       <CardActions>
-        <Button size="large" variant="contained" startIcon={<ShoppingCartOutlinedIcon />}>Add to Cart</Button>
+        <Button size="small" variant="contained"  className='button' startIcon={<ShoppingCartOutlinedIcon />}>Add to Cart</Button>
       </CardActions>
     </Card>
         </div>

@@ -60,7 +60,7 @@ export default function Header() {
     const navigate = useNavigate()
     return (
       
-            <StyledAppbar position="fixed" sx={{top:'40px'}}>
+            <StyledAppbar position="static" sx={{top:'40px'}}>
                 <Toolbar>
                     <Grid style={{ alignItems: "center" }} container spacing={1}>
                         <Grid item md={2}>
@@ -71,12 +71,12 @@ export default function Header() {
                             <Search></Search>
                         </Grid>
                         <Grid item md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
-                            <Button size="small" variant='contained' className='btn' onClick={()=>navigate('/plan')}>MEDHA ADVANTAGE PLAN</Button>
+                            <Button size="small" variant='contained' className='button' onClick={()=>navigate('/plan')}>MEDHA ADVANTAGE PLAN</Button>
                         </Grid>
 
 
                         <Grid item md={3}>
-                            <StyledTextButton size="small" startIcon={<UploadIcon />} >Upload Prescription</StyledTextButton>
+                            <StyledTextButton size="small" startIcon={<UploadIcon />} onClick={()=>navigate('/upload')}>Upload Prescription</StyledTextButton>
                             <StyledTextButton size="small" startIcon={<DownloadIcon />} >Download Reports</StyledTextButton>
                         </Grid>
                         <Grid item md={1}>

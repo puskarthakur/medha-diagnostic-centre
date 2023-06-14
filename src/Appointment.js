@@ -9,6 +9,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
 import './styles/Appointment.css'
+import Grid from '@mui/material/Grid';
 
 import CardHeader from '@mui/material/CardHeader';
 
@@ -19,11 +20,11 @@ export default function Appointment() {
         { label: 'The Godfather', year: 1972 },
         { label: 'The Godfather: Part II', year: 1974 }]
     return (
-        <div style={{ position: 'relative', top: '90px', width:'50%',left:'25%', paddingBottom:"40px" }}>
+        <div style={{ position: 'relative', top: '90px', paddingBottom:"40px" }}>
 
-
-            <Card >
-                <CardHeader title="Book an Appointment" sx={{textAlign: 'center'}}>Book an Appointment</CardHeader>
+         <Grid sx={{justifyContent: 'center', display:'flex'}}>
+            <Card sx={{ maxWidth: 450 }} >
+                <CardHeader title="Book an Appointment" sx={{textAlign: 'center',color: '#019a5d'}}>Book an Appointment</CardHeader>
                 <CardActions >
                     <div className="container">
                         <div className="row">
@@ -87,13 +88,14 @@ export default function Appointment() {
                             </div>
 
                         </div>
-                    <Button variant="contained">Submit</Button>
+                    <Button variant="contained" className="button">Submit</Button>
                     </div>
 
                     
 
                 </CardActions>
             </Card>
+            </Grid>
 
         </div>
     )

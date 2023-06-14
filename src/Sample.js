@@ -13,17 +13,17 @@ export default function Sample() {
         { label: 'The Godfather', year: 1972 },
         { label: 'The Godfather: Part II', year: 1974 }]
     return (
-        <div style={{ position: 'relative', top: '90px', width: '50%', left: '25%', paddingBottom:"40px" }}>
+        <div style={{ position: 'relative', top: '71px', width: '50%', left: '25%', paddingBottom:"40px" }}>
 
             <div className="container" >
-                <h5 style={{marginBottom:"20px"}}>Book Home Sample Collection</h5>
+                <h5 style={{marginBottom:"20px", color:'#019a5d'}}>Book Home Sample Collection</h5>
                 <div className="row">
                     <div className="col-sm-6">
-                        <label for="name" className="form-label">Your Full Name *</label>
+                        <label for="name" className="form-label">Your Full Name<span className="required">*</span></label>
                         <TextField fullWidth id="name" />
                     </div>
                     <div className="col-sm-6">
-                        <label for="name" className="form-label">Email *</label>
+                        <label for="name" className="form-label">Email<span className="required">*</span></label>
                         <TextField fullWidth id="name" />
                     </div>
 
@@ -43,11 +43,11 @@ export default function Sample() {
 
                 <div className="row">
                     <div className="col-sm-6">
-                        <label for="city" className="form-label">Mobile Number *</label>
+                        <label for="city" className="form-label">Mobile Number<span className="required">*</span></label>
                         <TextField fullWidth id="age" />
                     </div>
                     <div className="col-sm-6">
-                        <label for="city" className="form-label">Complete Address *</label>
+                        <label for="city" className="form-label">Complete Address</label>
                         <TextField fullWidth id="age" />
                     </div>
                 </div>
@@ -96,7 +96,7 @@ export default function Sample() {
 
 
 
-                <Button variant="contained">Request an Appointment</Button>
+                <Button variant="contained" className="button">Request an Appointment</Button>
             </div>
         </div>
     )
