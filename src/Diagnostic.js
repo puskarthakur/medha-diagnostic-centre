@@ -2,8 +2,10 @@ import React from "react";
 import banner from './images/download.jpg'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Button from '@mui/material/Button';
+import { useNavigate } from "react-router-dom";
 
 export default function Diagnostic() {
+    const navigate = useNavigate()
     const myStyle = {
         backgroundImage: `url(${banner})`,
         backgroundSize: '100%',
@@ -35,7 +37,7 @@ export default function Diagnostic() {
                 </div>
                 <h6 className="mb-0 mt-4">Clinical Chemistry</h6>
                 <p className="mt-3">Clinical chemistry (also known as chemical pathology, clinical biochemistry or medical biochemistry) is concerned with analyzing bodily fluids for diagnostic and therapeutic purposes. The most common specimens tested in clinical chemistry are blood and urine.</p>
-           <Button variant="contained">Read More</Button>
+           <Button variant="contained" onClick={()=>navigate('/patho')}>Read More</Button>
             </div>
             
             <div className="p-container">
