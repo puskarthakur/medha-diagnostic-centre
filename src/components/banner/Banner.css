@@ -1,0 +1,24 @@
+  .banner-content {
+      position: absolute;
+      top: 40%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+  }
+
+  .back-arrow {
+      display: inline-block;
+      margin-right: 10px;
+      color: white;
+      font-size: 8vh;
+      text-decoration: none;
+  }
+
+  .franchisee-text {
+      font-size: 2.5rem;
+  }
+
+  .arrow-icon {
+    width: 30px; /* Adjust the width value as needed */
+  }

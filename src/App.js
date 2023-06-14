@@ -11,9 +11,10 @@ import Sample from './Sample';
 import Upload from './Upload';
 import Advantage from './Advantage';
 import Cart from './Cart'
-import Partner from './Partner'
+import Partner from './components/partner/Partner'
 import Healthcheck from './Healthcheck';
 import Diagnostic from './Diagnostic';
+import About from './components/about/About'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       {/* <StaticCard></StaticCard> */}
       <Routes>
         <Route path="/home" element={<Home/>}></Route>
+        <Route path="/about" element={<About/>}></Route>
         <Route path="/appoint" element={<Appointment/>}></Route>
         <Route path="/sample" element={<Sample/>}></Route>
         <Route path="/upload" element={<Upload/>}></Route>
