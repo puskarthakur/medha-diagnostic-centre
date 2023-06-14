@@ -15,6 +15,7 @@ import Partner from './components/partner/Partner'
 import Healthcheck from './Healthcheck';
 import Diagnostic from './Diagnostic';
 import About from './components/about/About'
+import Pathology from './Pathology';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/partner" element={<Partner/>}></Route>
         <Route path="/check" element={<Healthcheck/>}></Route>
         <Route path="/diagnos" element={<Diagnostic/>}></Route>
+        <Route path="/patho" element={<Pathology/>}></Route>
       </Routes>
     </div>
   );
