@@ -1,62 +1,73 @@
-import * as React from 'react';
-import Button from '@mui/material/Button';
-import PhoneIcon from '@mui/icons-material/Phone';
+import React, { useState } from 'react';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import PersonIcon from '@mui/icons-material/Person';
 import './styles/Navbar.css';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 
-// const pages = ['Home', 'About Us', 'Tests/Packages', 'Services', 'Partner with us', 'Why Medha'];
-
-const navroute = [
-  {
-    name: 'Home',
-    path: '/home'
-  },
-  {
-    name: 'About us',
-    path: '/about'
-  },
-  {
-    name: 'Tests/Packages',
-    path: '/tests'
-  },
-  {
-    name: 'Services',
-    path: '/services'
-  },
-  {
-    name: 'Partner with us',
-    path: '/partner'
-  },
-  {
-    name: 'Why Medha',
-    path: '/medha'
-  }
-
-]
 
 
 export function Navbar() {
-  const navigate = useNavigate()
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
+  // const navigate = useNavigate()
   return (
-    <div id="menu">
-      <ul className='bar'>
 
-        {navroute.map((page) => (
-          <li key={page.name} onClick={()=>navigate(page.path)}
-          >{page.name} </li>
-        ))}
-        <div>
-          <Button className="navbar-button" startIcon={<PhoneIcon />}>7849930383</Button>
-          <Button className="navbar-button" startIcon={<WhatsAppIcon />}>67388399399</Button>
-          <Button  className="navbar-button" startIcon={<PersonIcon />}>Sign in</Button>
-        </div>
+    <div>
+    <nav className="navbar fixed-top navbar-expand-lg navbar-light">
 
-      </ul>
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item active">
+            <a className="nav-link" href="/home">Home</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/about">About Us</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/tests">Tests/Packages</a>
+          </li>
+          <li className={`nav-item dropdown ${isDropdownOpen ? 'show' : ''}`}>
+            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" onClick={toggleDropdown} aria-haspopup="true" aria-expanded={isDropdownOpen ? 'true' : 'false'}>
+              Services
+            </a>
+            <div className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`} aria-labelledby="navbarDropdown">
+              <a className="dropdown-item" href="/check">Health Check-ups</a>
+              <a className="dropdown-item" href="/diagnos">Diagnostic Services</a>
+              <a className="dropdown-item" href="care">Home HealthCare</a>
+            </div>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/partner">Partner With US</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Why Medha</a>
+          </li>
+          <div style={{display: 'flex', position: 'absolute', right: '2rem'}}>
+          <li className="nav-item">
+   
+   <a className="nav-link" href="#"><span className='px-2'><LocalPhoneIcon/></span>9886753345</a>
+ </li>
+ <li className="nav-item">
+
+<a className="nav-link" href="#"><span className='px-2'><WhatsAppIcon/></span>9886753345</a>
+</li>
+<li className="nav-item">
+
+<a className="nav-link" href="#"><span className='px-2'><PersonIcon/></span>Sign In</a>
+</li>
+          </div>
+  
+        </ul>
+      </div>
+    </nav>
     </div>
   );
+
 }
 
 

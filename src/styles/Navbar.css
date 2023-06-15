@@ -6,15 +6,26 @@
   color: white;
 }
 
+
+.navbar .navbar-nav .nav-link{
+
+  color: white !important;
+  font-size: 1.2rem;
+
+}
+.navbar .navbar-nav {
+  padding-left: 1.4rem;
+}
+
 #menu li:first-child{
   border-left: none;
 }
-.bar{
-  background-color: #019a5d;
+.navbar{
+  background-color: #019a5d !important;
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 40px;
+  height: 4rem !important;
   list-style: none;
   margin: 0rem !important;
 }
