@@ -1,0 +1,24 @@
+.franchise-col {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.section-content.grey-content > p {
+  
+    color: #575757;
+}
+
+.section-content > p {
+    font-size: 1.2rem;
+    margin-bottom: 2.182em;
+    line-height: 1.6;
+}
+
+.section-content h3.sub-heading {
+    font-family: 'latosemibold';
+}
+
+.franchise-col h3 {
+    font-size: 1rem;
+    margin-top: -0.7rem;
+}
