@@ -67,3 +67,9 @@
 .section-content.light-content, .section-content.light-content > p {
     color: #ffffff;
 }
+
+.section-padding-lg {
+    padding: 4em 15px;
+    margin-left: -1.1rem;
+    margin-right: -1.3rem;
+}

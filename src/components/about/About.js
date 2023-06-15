@@ -120,7 +120,7 @@ export default function About() {
                                             />
                                         </div>
                                         <div className="about-us-founder-details">
-                                            <Typography variant="h2" className="mb-1 name" style={{fontSize: '1.75rem'}}>
+                                            <Typography variant="h2" className="mb-1 name" style={{ fontSize: '1.75rem' }}>
                                                 Dr. Puskar Thakur
                                             </Typography>
                                             <Typography variant="body1" className="mb-1 designation">
@@ -135,7 +135,7 @@ export default function About() {
                                 <Grid item xs={12} md={8} lg={9}>
                                     <SectionContent className="section-content light-content mt-4 mt-md-0">
                                         <div className="section-heading" >
-                                            <Typography variant="h2" className="mb-2" style={{fontSize: '1.75rem'}}>
+                                            <Typography variant="h2" className="mb-2" style={{ fontSize: '1.75rem' }}>
                                                 About the Founder
                                             </Typography>
                                         </div>
@@ -159,6 +159,17 @@ export default function About() {
                             </Grid>
                         </div>
                     </div>
+                </Box>
+                <Box className="section-padding-lg pt-0 px-0">
+                    <Grid container justifyContent="center" style={{ backgroundColor: '#ebedec' }}>
+                        <Grid item xs={12}>
+                            <img
+                                src="https://www.suburbandiagnostics.com/images/our-network.jpg"
+                                alt="Our Network"
+                                style={{ width: '100%' }}
+                            />
+                        </Grid>
+                    </Grid>
                 </Box>
             </ThemeProvider>
 
