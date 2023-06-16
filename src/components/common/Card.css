@@ -9,8 +9,7 @@
 }
 
 .section-content > p {
-    font-size: 1.2rem;
-    margin-bottom: 2.182em;
+    font-size: 1rem;
     line-height: 1.6;
 }
 
@@ -19,6 +18,7 @@
 }
 
 .franchise-col h3 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-top: -0.7rem;
 }
+

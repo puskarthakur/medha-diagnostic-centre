@@ -11,6 +11,7 @@
 .containerBox {
     padding: 3rem;
     padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .franchise-why-partner-section {
@@ -20,6 +21,7 @@
 
 .section-content h3.sub-heading {
     font-family: 'latosemibold';
+    font-size: 20px;
 }
 
 .franchise-why-partner-section h3.top-subheading {
@@ -29,10 +31,36 @@
 .section-content > p {
     font-size: 15px;
 }
+.li {
+    font-size: 15px;
+    font-family: 'latoregular';
+}
 
 .header-content {
     padding-left: 1.3rem;
 
+}
+
+.bottom-line {
+    border-bottom: 1px solid #F0F0F0;
+    margin: 2rem;
+}
+
+.h3.sub-heading {
+    color: #3a3a3a;
+}
+
+.section-content.normal-content .section-list li {
+    color: #3a3a3a;
+}
+
+.section-padding {
+    padding-left: 4.5rem;
+}
+
+.second-section-padding {
+    margin-top: 2rem;
+    padding: 1rem 5rem 1rem 5rem;
 }
 
 
