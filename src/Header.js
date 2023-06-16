@@ -60,7 +60,7 @@ export default function Header() {
     const navigate = useNavigate()
     return (
       
-            <StyledAppbar position="static" sx={{top:'40px'}}>
+            <StyledAppbar position="fixed" sx={{top:'64px'}}>
                 <Toolbar>
                     <Grid style={{ alignItems: "center" }} container spacing={1}>
                         <Grid item md={2}>
@@ -80,8 +80,8 @@ export default function Header() {
                             <StyledTextButton size="small" startIcon={<DownloadIcon />} >Download Reports</StyledTextButton>
                         </Grid>
                         <Grid item md={1}>
-                            <StyledIconButton aria-label="delete">
-                                <ShoppingCartOutlinedIcon />
+                            <StyledIconButton aria-label="delete" onClick={()=>navigate('/cart')}>
+                                <ShoppingCartOutlinedIcon  />
                             </StyledIconButton>
                             <StyledIconButton aria-label="delete" >
                                 <WalletIcon />

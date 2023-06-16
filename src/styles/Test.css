@@ -1,0 +1,30 @@
+
+.total {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between !important;
+}
+.box {
+    border: 1px solid #c6c6c6;
+    border-bottom: none;
+    border-left: none;
+}
+.box ul {
+    list-style-type: none;
+}
+.test-container{
+    margin-top: 1rem;
+    border-top: 1px solid #c6c6c6;
+}
+.tests .search {
+   
+  
+    padding-bottom: 1.3rem;
+    position: relative;
+    display: flex;
+    left: 2%;
+}
+.search input {
+    width:40%
+}

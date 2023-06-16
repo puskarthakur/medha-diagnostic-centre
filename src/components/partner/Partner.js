@@ -6,11 +6,11 @@ import './Partner.css';
 import { Grid } from '@mui/material';
 
 export default function Partner() {
-    const iconStyle = {
-        // Define the styles for the icon (replace with your desired styles)
-        fontSize: '2rem',
-        color: 'blue',
-    };
+    // const iconStyle = {
+    //     // Define the styles for the icon (replace with your desired styles)
+    //     fontSize: '2rem',
+    //     color: 'blue',
+    // };
 
     const genericCards = [
         {

@@ -1,7 +1,7 @@
 
 import './App.css';
 import { Navbar } from './Navbar';
-// import Header from './Header'
+import Header from './Header'
 // import { StaticCard } from './StaticCard';
 import { Routes } from 'react-router-dom';
 import { Route } from 'react-router-dom';
@@ -19,13 +19,14 @@ import Pathology from './Pathology';
 import Radiology from './Radiology';
 import Cardiology from './Cardiology';
 import Homecare from './Homecare';
+import Tests from './Tests';
 
 
 function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-      {/* <Header></Header> */}
+      <Header></Header>
       {/* <StaticCard></StaticCard> */}
       <Routes>
         <Route path="/home" element={<Home/>}></Route>
@@ -42,6 +43,7 @@ function App() {
         <Route path="/radio" element={<Radiology/>}></Route>
         <Route path="/cardio" element={<Cardiology/>}></Route>
         <Route path="/care" element={<Homecare/>}></Route>
+        <Route path="/tests" element={<Tests/>}></Route>
       </Routes>
     </div>
   );
