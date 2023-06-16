@@ -74,6 +74,7 @@ export default function Partner() {
                                             iconClass={card.iconClass}
                                             heading={card.heading}
                                             paragraph={card.paragraph}
+
                                         />
                                     </Grid>
                                 ))}

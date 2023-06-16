@@ -216,3 +216,21 @@
     background-color: #DAF8F7;
     padding: 1.5em 4em;
 }
+.home-partner{
+    background-color: #19A5A0;
+}
+.partner-heading {
+    font-family: 'latobold';
+    font-size: 2rem;
+    color: #ffff;
+
+}
+.text-white{
+    color: #ffff;
+}
+
+/* to display the dropdown from navbar */
+.css-15d4sl0-MuiPaper-root-MuiAppBar-root {
+    z-index: 999 !important;
+}
+

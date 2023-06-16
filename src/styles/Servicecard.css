@@ -1,0 +1,16 @@
+
+  .service {
+    background-color: #19A5A0;
+    
+
+  }
+  .service-heading {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .item1 {
+    display: flex;
+    align-items: center;
+  }

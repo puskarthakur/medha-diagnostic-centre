@@ -20,6 +20,8 @@ import Radiology from './Radiology';
 import Cardiology from './Cardiology';
 import Homecare from './Homecare';
 import Tests from './Tests';
+import Amenity from './Amenity';
+import Servicecard from './Servicecard';
 
 
 function App() {
@@ -44,6 +46,8 @@ function App() {
         <Route path="/cardio" element={<Cardiology/>}></Route>
         <Route path="/care" element={<Homecare/>}></Route>
         <Route path="/tests" element={<Tests/>}></Route>
+        <Route path="/ame" element={<Amenity/>}></Route>
+        <Route path="/serve" element={<Servicecard/>}></Route>
       </Routes>
     </div>
   );
