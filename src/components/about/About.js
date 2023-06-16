@@ -7,6 +7,9 @@ import IconTest from '@mui/icons-material/AssignmentTurnedIn';
 import IconBuilding from '@mui/icons-material/LocationCity';
 import IconLocation from '@mui/icons-material/LocationOn';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import bannerImage from '../../images/aboutusbackgroundimage.avif';
+import Card from "../common/Card";
+import { faMicroscope } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function About() {
@@ -25,6 +28,34 @@ export default function About() {
             },
         },
     });
+
+    const genericCards = [
+        {
+            iconClass: faMicroscope,
+            heading: 'Extensive Network',
+            paragraph: 'We have our Central Lab in Mumbai; four satellite labs across Mumbai, Thane, and Navi Mumbai; several regional labs in Pune, Nagpur, Nashik, Aurangabad, Indore, Jabalpur and Goa; and twelve labs in reputed hospitals across Mumbai, Pune and Madhya Pradesh.'
+        },
+        {
+            iconClass: faMicroscope,
+            heading: 'Logistics',
+            paragraph: 'We have excellent logistics management support offered by a team of 150+ members and a collaboration with a leading national courier company that looks after compliance with IATA norms and maintains the sample’s integrity throughout transportation.'
+        },
+        {
+            iconClass: faMicroscope,
+            heading: 'Wide Range of Services',
+            paragraph: 'We provide diagnostic services in the fields of biochemistry, hematology, immunology, clinical pathology, serology, molecular, microbiology, histopathology, cytology, flow cytometry, and others.'
+        },
+        {
+            iconClass: faMicroscope,
+            heading: 'Infrastructure',
+            paragraph: 'We use top-notch, fully automated instruments and machines from globally renowned brands like Roche, Biomeriux, Horiba, Sysmex, Johnson & Johnson, etc.'
+        },
+        {
+            iconClass: faMicroscope,
+            heading: 'Support',
+            paragraph: 'We use top-notch, fully automated instruments and machines from globally renowned brands like Roche, Biomeriux, Horiba, Sysmex, Johnson & Johnson, etc.'
+        }
+    ]
 
 
     const SectionContent = styled('div')(({ theme }) => ({
@@ -45,7 +76,12 @@ export default function About() {
     return (
         <div>
             <div>
-                <Banner />
+                <Banner
+                    icon={false} // Pass true or false to display or hide the arrow icon
+                    text="ABOUT US" // The text to be displayed in the banner
+                    imageUrl={bannerImage} // The URL of the banner image
+                    imageHeight="12rem" // The height of the banner image
+                />
             </div>
             <ThemeProvider theme={theme}>
                 <Box className="container">
@@ -172,6 +208,28 @@ export default function About() {
                     </Grid>
                 </Box>
             </ThemeProvider>
+            <div>
+                <div className="containerBox">
+                    <div className="section-content myheader">
+                        <h3 >Services</h3>
+                    </div>
+                    <div row row-eq-height>
+                        <Grid container spacing={3}>
+                            {genericCards.map((card, index) => (
+                                <Grid key={index} item xs={12} md={4}>
+                                    <Card
+                                        iconClass={card.iconClass}
+                                        heading={card.heading}
+                                        paragraph={card.paragraph}
+                                        buttonName={"KNOW MORE"}
+                                    />
+                                </Grid>
+                            ))}
+                        </Grid>
+                    </div>
+                    <div className="bottom-line" />
+                </div>
+            </div>
 
         </div>
 

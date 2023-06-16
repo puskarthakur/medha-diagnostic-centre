@@ -4,6 +4,8 @@ import Card from "../common/Card";
 import { faMicroscope } from '@fortawesome/free-solid-svg-icons';
 import './Partner.css';
 import { Grid } from '@mui/material';
+import bannerImage from '../../images/bannerImage.jpg';
+
 
 export default function Partner() {
     // const iconStyle = {
@@ -44,7 +46,12 @@ export default function Partner() {
     return (
         <div>
             <div>
-                <Banner />
+                <Banner
+                    icon={true} // Pass true or false to display or hide the arrow icon
+                    text="FRANCHISEE" // The text to be displayed in the banner
+                    imageUrl= {bannerImage} // The URL of the banner image
+                    imageHeight="8rem" // The height of the banner image
+                />
             </div>
             <div>
                 <div className="containerBox">
@@ -114,7 +121,7 @@ export default function Partner() {
                 </div>
                 <div className="col-md-4 pr-0 pl-0 pl-md-3">
                     <div className="img-wrap">
-                        <img src="https://www.suburbandiagnostics.com/Content/assets/images/franchise-img-4.jpg" style={{height: "20rem"}} className="w-65 franchise-section-img" alt="Franchisee 2"></img>
+                        <img src="https://www.suburbandiagnostics.com/Content/assets/images/franchise-img-4.jpg" style={{ height: "20rem" }} className="w-65 franchise-section-img" alt="Franchisee 2"></img>
                     </div>
 
                 </div>

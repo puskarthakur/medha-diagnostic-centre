@@ -1,56 +1,55 @@
-import React from 'react';
-import bannerImage from '../../images/bannerImage.jpg';
-import './Banner.css';
+import { Box, IconButton, Typography } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import bannerImage from '../../images/bannerImage.jpg';
+import './Banner.css';
 
-const Banner = () => {
+const Banner = ({ icon, text, imageUrl }) => {
   const banner = {
     position: 'relative',
-    height: '8rem',
-    backgroundImage: `url(${bannerImage})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
     display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: 'row',
+    backgroundImage: `url(${bannerImage})`,
+    backgroundSize: '100%',
+    height: '8rem',
+    marginTop: '8rem'
   };
 
   const bannerContent = {
     display: 'flex',
     alignItems: 'center',
-    position: 'relative',
-    zIndex: 1,
     marginLeft: '1rem',
   };
 
   const backArrow = {
     marginRight: '0.5rem',
     color: 'white',
-    fontSize: '1.5rem',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    fontSize: '5rem',
+    marginLeft:'4rem',
+    marginBottom: '1.2rem'
   };
 
   const franchiseeText = {
-    fontSize: '1.5rem',
     color: 'white',
-    display: 'flex',
-    alignItems: 'center',
+    fontSize: '2rem',
+    fontWeight: 'bold',
   };
 
   return (
-    <div style={banner}>
-      <div className="banner-content" style={bannerContent}>
-        <a href="#" className="back-arrow" style={backArrow}>
-          <FontAwesomeIcon icon={faArrowLeft} className="arrow-icon" />
-        </a>
-        <span className="franchisee-text" style={franchiseeText}>
-          FRANCHISEE
-        </span>
-      </div>
-    </div>
+    <Box sx={banner}>
+      <Box>
+      {icon && (
+        <IconButton className="back-arrow" sx={backArrow} component="a" href="#">
+          <FontAwesomeIcon icon={faArrowLeft} className="arrow-icon" size='rem' />
+        </IconButton>
+      )}
+      <Box className="banner-content" sx={bannerContent}>
+        <Typography variant="span" className="franchisee-text" sx={franchiseeText}>
+          {text}
+        </Typography>
+      </Box>
+      </Box>
+    </Box>
   );
 };
 
