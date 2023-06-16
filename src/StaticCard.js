@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import { useNavigate } from "react-router-dom";
 
 
-export function StaticCard() {
+export default function StaticCard() {
 
     const redirect=()=>{
       window.location.href="//api.whatsapp.com/send?phone=919602178333"

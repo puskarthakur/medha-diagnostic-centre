@@ -13,7 +13,7 @@ export default function Sample() {
         { label: 'The Godfather', year: 1972 },
         { label: 'The Godfather: Part II', year: 1974 }]
     return (
-        <div style={{ position: 'relative', top: '71px', width: '50%', left: '25%', paddingBottom:"40px" }}>
+        <div style={{marginTop: '143px'}}>
 
             <div className="container" >
                 <h5 style={{marginBottom:"20px", color:'#019a5d'}}>Book Home Sample Collection</h5>

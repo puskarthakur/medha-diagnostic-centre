@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 
 export default function Upload() {
     return (
-        <div className="upload" >
+        <div className="upload" style={{marginTop: '143px'}} >
 
             <div className="heading">
                 <h4>Upload Prescription</h4>

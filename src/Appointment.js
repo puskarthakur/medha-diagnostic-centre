@@ -20,7 +20,7 @@ export default function Appointment() {
         { label: 'The Godfather', year: 1972 },
         { label: 'The Godfather: Part II', year: 1974 }]
     return (
-        <div style={{ position: 'relative', top: '90px', paddingBottom:"40px" }}>
+        <div style={{marginTop: '143px'}}>
 
          <Grid sx={{justifyContent: 'center', display:'flex'}}>
             <Card sx={{ maxWidth: 450 }} >
