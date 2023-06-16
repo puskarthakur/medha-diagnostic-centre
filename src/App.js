@@ -31,7 +31,7 @@ function App() {
       <Header></Header>
       {/* <StaticCard></StaticCard> */}
       <Routes>
-        <Route path="/home" element={<Home/>}></Route>
+        <Route path="/"  exact element={<Home/>}></Route>
         <Route path="/about" element={<About/>}></Route>
         <Route path="/appoint" element={<Appointment/>}></Route>
         <Route path="/sample" element={<Sample/>}></Route>
