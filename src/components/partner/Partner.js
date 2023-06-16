@@ -72,9 +72,53 @@ export default function Partner() {
                                 ))}
                             </Grid>
                         </div>
+                        <div className="bottom-line" />
                     </div>
 
                 </div>
+            </div>
+            <div className="row align-items-center section-padding">
+                <div className="col-md-4 pl-0">
+                    <div className="img-wrap">
+                        <img src="https://www.suburbandiagnostics.com/Content/assets/images/franchise-img-3.jpg" className="w-100 franchise-section-img" alt="Franchisee 2"></img>
+                    </div>
+
+                </div>
+                <div className="col-md-8 pl-0 pl-md-3">
+                    <div className="section-content normal-content pl-md-4 mt-4 mt-md-0">
+                        <h3 className="sub-heading mb-3">Requirements for a Suburban Collection Centre Franchisee</h3>
+                        <ul className="section-list pl-0">
+                            <li >Commitment to providing highest quality patient service</li>
+                            <li>Space requirement of 250 sq. ft.</li>
+                            <li>Located in a visible, easily accessible, medically active location on a main road</li>
+                            <li>Preferably on the ground floor</li>
+                            <li>Washroom within the selected premises</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div className="row flex-column-reverse flex-md-row align-items-center section-padding second-section-padding pt-0">
+                <div className="col-md-8 px-0 ppx-md-3">
+                    <div className="section-content normal-content pl-md-4 mt-4 mt-md-0">
+                        <h3 className="sub-heading mb-3">Support from Suburban Diagnostics</h3>
+                        <ul className="section-list pl-0">
+                            <li >Standardized Suburban centre layout blueprint for development</li>
+                            <li>IT software and associated hardware (bar-code printer)</li>
+                            <li>Internal and external branding for the centre</li>
+                            <li>Technical training on best practices on phlebotomy and laboratory services</li>
+                            <li>Regular marketing, branding support through consumer activities and collaterals</li>
+                            <li>Sales support and domain knowledge</li>
+                            <li>Lead generation for home visit through call centre support</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="col-md-4 pr-0 pl-0 pl-md-3">
+                    <div className="img-wrap">
+                        <img src="https://www.suburbandiagnostics.com/Content/assets/images/franchise-img-4.jpg" style={{height: "20rem"}} className="w-65 franchise-section-img" alt="Franchisee 2"></img>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     )
