@@ -1,15 +1,22 @@
 import React from "react";
-import Banner from '../src/components/banner/Banner'
 import './styles/Test.css'
 import Button from '@mui/material/Button';
 import Plancard from './Plancard'
+
+import Banner from './components/banner/Banner';
+import bannerImage from './images/bannerImage.jpg';
 
 export default function Tests() {
 
     return (
         <div>
             <div>
-                <Banner />
+            <Banner
+            icon={false} // Pass true or false to display or hide the arrow icon
+            text="PACKAGE" // The text to be displayed in the banner
+            imageUrl={bannerImage} // The URL of the banner image
+            imageHeight="8rem" // The height of the banner image
+          />
             </div>
            
                 <div className="container py-4">
