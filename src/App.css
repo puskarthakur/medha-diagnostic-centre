@@ -53,3 +53,8 @@
     z-index: 999 !important;
 }
 
+.white-button {
+    background-color: white !important;
+    color: #019a5d !important;
+}
+

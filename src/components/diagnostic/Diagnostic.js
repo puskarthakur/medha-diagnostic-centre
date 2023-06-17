@@ -27,7 +27,7 @@ export default function Diagnostic() {
                 </div>
                 <h6 className="mb-0 mt-4">Clinical Chemistry</h6>
                 <p className="mt-3">Clinical chemistry (also known as chemical pathology, clinical biochemistry or medical biochemistry) is concerned with analyzing bodily fluids for diagnostic and therapeutic purposes. The most common specimens tested in clinical chemistry are blood and urine.</p>
-                <Button variant="contained" onClick={() => navigate('/patho')}>Read More</Button>
+                <Button variant="contained" onClick={() => navigate('/pathology')}>Read More</Button>
             </div>
 
             <div className="p-container">
@@ -36,7 +36,7 @@ export default function Diagnostic() {
                 </div>
                 <h6 className="mb-0 mt-4">Digital X-Ray</h6>
                 <p className="mt-3">Clinical chemistry (also known as chemical pathology, clinical biochemistry or medical biochemistry) is concerned with analyzing bodily fluids for diagnostic and therapeutic purposes. The most common specimens tested in clinical chemistry are blood and urine.</p>
-                <Button variant="contained" onClick={() => navigate('/radio')}>Read More</Button>
+                <Button variant="contained" onClick={() => navigate('/radiology')}>Read More</Button>
             </div>
             <div className="p-container">
                 <div className="section-heading">
@@ -44,7 +44,7 @@ export default function Diagnostic() {
                 </div>
                 <h6 className="mb-0 mt-4">ECG Electrocardiom</h6>
                 <p className="mt-3">Clinical chemistry (also known as chemical pathology, clinical biochemistry or medical biochemistry) is concerned with analyzing bodily fluids for diagnostic and therapeutic purposes. The most common specimens tested in clinical chemistry are blood and urine.</p>
-                <Button variant="contained" onClick={() => navigate('/cardio')}>Read More</Button>
+                <Button variant="contained" onClick={() => navigate('/cardiology')}>Read More</Button>
             </div>
             <div className="p-container">
                 <div className="section-heading">
