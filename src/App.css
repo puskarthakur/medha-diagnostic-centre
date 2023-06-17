@@ -234,3 +234,7 @@
     z-index: 999 !important;
 }
 
+.highcharts-background {
+    fill: #19A5A0 !important;
+}
+
