@@ -1,27 +1,27 @@
 
 import './App.css';
-import { Navbar } from './Navbar';
-import Header from './Header'
+import { Navbar } from './components/navbar/Navbar';
+import Header from './components/header/Header'
 // import { StaticCard } from './StaticCard';
 import { Routes } from 'react-router-dom';
 import { Route } from 'react-router-dom';
-import Home from './Home';
-import Appointment from './Appointment';
-import Sample from './Sample';
-import Upload from './Upload';
-import Advantage from './Advantage';
-import Cart from './Cart'
+import Home from './components/home/Home';
+import Appointment from './components/appointment/Appointment';
+import Sample from './components/homesample/Sample';
+import Upload from './components/upload/Upload';
+import Advantage from './components/advantage/Advantage';
+import Cart from './components/cart/Cart'
 import Partner from './components/partner/Partner'
-import Healthcheck from './Healthcheck';
-import Diagnostic from './Diagnostic';
+import Healthcheck from './components/healthcheck/Healthcheck';
+import Diagnostic from './components/diagnostic/Diagnostic';
 import About from './components/about/About'
-import Pathology from './Pathology';
-import Radiology from './Radiology';
-import Cardiology from './Cardiology';
-import Homecare from './Homecare';
-import Tests from './Tests';
-import Amenity from './Amenity';
-import Servicecard from './Servicecard';
+import Pathology from './components/pathology/Pathology';
+import Radiology from './components/radiology/Radiology';
+import Cardiology from './components/cardiology/Cardiology';
+import Healthcare from './components/healthcare/Healthcare';
+import Tests from './components/test/Tests';
+import Amenity from './components/amenity/Amenity';
+import Servicecard from './components/servicecard/Servicecard';
 
 
 function App() {
@@ -44,7 +44,7 @@ function App() {
         <Route path="/patho" element={<Pathology/>}></Route>
         <Route path="/radio" element={<Radiology/>}></Route>
         <Route path="/cardio" element={<Cardiology/>}></Route>
-        <Route path="/care" element={<Homecare/>}></Route>
+        <Route path="/care" element={<Healthcare/>}></Route>
         <Route path="/tests" element={<Tests/>}></Route>
         <Route path="/ame" element={<Amenity/>}></Route>
         <Route path="/serve" element={<Servicecard/>}></Route>

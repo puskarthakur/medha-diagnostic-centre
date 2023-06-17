@@ -1,0 +1,14 @@
+.diagnos .section-heading {
+    display: flex;
+    align-items: center;
+    background-color: #DAF8F7;
+    padding: 1.5em 2em;
+}
+
+.diagnos .p-container {
+    padding: 1.5em 4em;
+}
+
+.diagnos {
+    padding-bottom: 4rem;
+}

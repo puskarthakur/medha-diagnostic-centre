@@ -26,7 +26,7 @@ const Banner = ({ icon, text, imageUrl }) => {
     color: 'white',
     fontSize: '5rem',
     marginLeft:'4rem',
-    marginBottom: '1.2rem'
+    marginBottom: '1.2rem'  
   };
 
   const franchiseeText = {
