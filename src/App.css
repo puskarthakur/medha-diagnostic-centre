@@ -1,38 +1,18 @@
-.header {
-    background-color: antiquewhite;
-    height: 4.5rem !important;
-    display: flex;
-    flex-direction: row;
-}
-
 .css-1q9uik-MuiInputBase-root {
     width: '99% !important'
 }
 
 .button {
     background-color: #019a5d !important;
-    color:white !important;
+    color: white !important;
     border-radius: 4.2px;
     text-transform: capitalize !important;
 }
 
 .btn:hover {
-    background-color:none !important;
-    color:none !important;
+    background-color: none !important;
+    color: none !important;
 }
-
-
-
-
-
-
-
-.card {
- 
-    width: 85%
-}
-
-
 
 /* To reduce the height of text field */
 .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
@@ -44,12 +24,6 @@
     height: 0.4375em !important;
 }
 
-.featutre-cards {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-}
-
 .center {
     text-align: center;
 }
@@ -57,175 +31,15 @@
 .required {
     color: red;
 }
-
-.order-heading {
-    font-size: 1.25em;
-    color: #383838;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-start;
-}
-.order-heading1 {
-    font-size: 1.25em;
-    color: #383838;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-.order-list{
-    background-color: #019a5d;
-    list-style: none;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    padding: 8px;
-    color: white;
-
-}
-
-.appbar-div{
+.appbar-div {
     position: 'relative';
-     top: '90px';
-     padding-bottom: "40px"; width: '50%'; left: '25%'
+    top: '90px';
+    padding-bottom: "40px";
+    width: '50%';
+    left: '25%'
 }
 
-
-.static-action {
-    background-color: #019a5d;
-   
-
-}
-.static-card{
-    width:max-content;
-    background-color: #019a5d !important;
-    border-radius: 15px !important;
-    position: fixed;
-    z-index: 999;
-    right: 13px;
-    top:146px
-}
-
-.static-btns{
-    display: flex;
-    flex-direction: column;
-    text-transform: capitalize !important;
-    color: white !important;
-    padding: 10px 4px !important;
-
-}
-.footer {
- 
-        background-color: #019a5d;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        color: white;
-        font-size: 25px;
-        height:5rem;
-        display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-        /* border: 1px  #CCC solid;
-     
-    
-        box-shadow: 
-            inset 0px 11px 8px -10px #CCC,
-            inset 0px -11px 8px -10px #CCC;  */
- 
-}
-.footer-buttons{
-    color: #019a5d  !important;
-    background-color: white !important;
-    margin-right: 1.3rem !important;
-}
-.hc .p-container{
-  
-    padding: 1.5em 4em;
-}
-.hc{
-    padding-bottom: 3rem;
-}
-.hc .package-text{
-    margin-top: 0;
-    margin-bottom: 0 !important;
-    padding: 0rem 1.4rem;
-}
-.hc .package {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #DAF8F7;
-    padding: 1.5em 4em;
-}
-.diagnos .section-heading {
-    display: flex;
-    align-items: center;
-    background-color: #DAF8F7;
-    padding: 1.5em 2em;
-}
-.diagnos .p-container{
-    padding: 1.5em 4em;   
-}
-.diagnos {
-    padding-bottom: 4rem;
-}
-.patho .content {
-    border-bottom: 1px solid #e0e0e0;
-}
-.radiology li {
-    margin-bottom: 0.4rem;
-    font-size: 1em;
-}
-.homecare .list-counter {
-    font-family: latobold;
-    font-size: 1.2em;
-    flex: 0 0 2.143em;
-    max-width: 2.143em;
-    height: 2.143em;
-    border-radius: 1.786em;
-    border: 0.179em solid #19A5A0;
-    display: flex;
-    align-items: center;
-    margin-right: 0.857em;
-    justify-content: center;
-    color: #19A5A0;
-}
-
-
-.homecare .p-container{
-  
-    padding: 0em 4em;
-}
-.homecare{
-    padding-bottom: 3rem;
-}
-.homecare .package-text{
-    margin-top: 0;
-    margin-bottom: 0 !important;
-    padding: 0rem 1.4rem;
-}
-.homecare .package {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #DAF8F7;
-    padding: 1.5em 4em;
-}
-.home-partner{
-    background-color: #19A5A0;
-}
-.partner-heading {
-    font-family: 'latobold';
-    font-size: 2rem;
-    color: #ffff;
-
-}
-.text-white{
+.text-white {
     color: #ffff;
 }
 
@@ -233,4 +47,3 @@
 .css-15d4sl0-MuiPaper-root-MuiAppBar-root {
     z-index: 999 !important;
 }
-
