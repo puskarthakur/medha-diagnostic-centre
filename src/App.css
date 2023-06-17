@@ -9,6 +9,11 @@
     text-transform: capitalize !important;
 }
 
+.highcharts-background {
+    fill: #19A5A0 !important;
+}
+
+
 .btn:hover {
     background-color: none !important;
     color: none !important;
