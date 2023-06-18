@@ -2,7 +2,6 @@ import React from "react";
 import './Test.css'
 import Button from '@mui/material/Button';
 import Plancard from '../plan/Plancard'
-
 import Banner from '../banner/Banner';
 import bannerImage from '../../images/bannerImage.jpg';
 
@@ -93,73 +92,73 @@ export default function Tests() {
                      
                    <div className="test-container">
                    <div className="row">
-                      <div className="col-md-3">
+                      <div className="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3">
                       <Plancard title="Proself" content="A basic helath chekup package
                       ideal for those" price="1000" />
                       </div>
-                      <div className="col-md-3">
+                      <div className="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3">
                       <Plancard title="Proself" content="A basic helath chekup package
                       ideal for those" price="1000" />
                       </div>
-                      <div className="col-md-3">
+                      <div className="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3">
                       <Plancard title="Proself" content="A basic helath chekup package
                       ideal for those" price="1000" />
                       </div>
-                      <div className="col-md-3">
-                      <Plancard title="Proself" content="A basic helath chekup package
-                      ideal for those" price="1000" />
-                      </div>
-                   </div>
-                   <div className="row">
-                      <div className="col-md-3">
-                      <Plancard title="Proself" content="A basic helath chekup package
-                      ideal for those" price="1000" />
-                      </div>
-                      <div className="col-md-3">
-                      <Plancard title="Proself" content="A basic helath chekup package
-                      ideal for those" price="1000" />
-                      </div>
-                      <div className="col-md-3">
-                      <Plancard title="Proself" content="A basic helath chekup package
-                      ideal for those" price="1000" />
-                      </div>
-                      <div className="col-md-3">
+                      <div className="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3">
                       <Plancard title="Proself" content="A basic helath chekup package
                       ideal for those" price="1000" />
                       </div>
                    </div>
                    <div className="row">
-                      <div className="col-md-3">
+                      <div className="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3">
                       <Plancard title="Proself" content="A basic helath chekup package
                       ideal for those" price="1000" />
                       </div>
-                      <div className="col-md-3">
+                      <div className="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3">
                       <Plancard title="Proself" content="A basic helath chekup package
                       ideal for those" price="1000" />
                       </div>
-                      <div className="col-md-3">
+                      <div className="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3">
                       <Plancard title="Proself" content="A basic helath chekup package
                       ideal for those" price="1000" />
                       </div>
-                      <div className="col-md-3">
+                      <div className="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3">
                       <Plancard title="Proself" content="A basic helath chekup package
                       ideal for those" price="1000" />
                       </div>
                    </div>
                    <div className="row">
-                      <div className="col-md-3">
+                      <div className="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3">
                       <Plancard title="Proself" content="A basic helath chekup package
                       ideal for those" price="1000" />
                       </div>
-                      <div className="col-md-3">
+                      <div className="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3">
                       <Plancard title="Proself" content="A basic helath chekup package
                       ideal for those" price="1000" />
                       </div>
-                      <div className="col-md-3">
+                      <div className="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3">
                       <Plancard title="Proself" content="A basic helath chekup package
                       ideal for those" price="1000" />
                       </div>
-                      <div className="col-md-3">
+                      <div className="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3">
+                      <Plancard title="Proself" content="A basic helath chekup package
+                      ideal for those" price="1000" />
+                      </div>
+                   </div>
+                   <div className="row">
+                      <div className="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3">
+                      <Plancard title="Proself" content="A basic helath chekup package
+                      ideal for those" price="1000" />
+                      </div>
+                      <div className="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3">
+                      <Plancard title="Proself" content="A basic helath chekup package
+                      ideal for those" price="1000" />
+                      </div>
+                      <div className="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3">
+                      <Plancard title="Proself" content="A basic helath chekup package
+                      ideal for those" price="1000" />
+                      </div>
+                      <div className="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3">
                       <Plancard title="Proself" content="A basic helath chekup package
                       ideal for those" price="1000" />
                       </div>

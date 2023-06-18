@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'highcharts/css/highcharts.css';
 import { BrowserRouter } from 'react-router-dom';
+import store from './store'
+import { Provider } from 'react-redux';
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.
 
@@ -13,7 +15,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <Provider store={store}>
     <App />
+    </Provider>
+
     </BrowserRouter>
    
   </React.StrictMode>

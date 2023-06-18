@@ -14,6 +14,8 @@ import { Search } from '../search/Search';
 import UploadIcon from '@mui/icons-material/Upload';
 import DownloadIcon from '@mui/icons-material/Download';
 import { useNavigate } from 'react-router-dom';
+import Badge from '@mui/material/Badge';
+import { useSelector } from 'react-redux';
 
 
 const StyledAppbar = styled(AppBar)(({ theme }) => ({
@@ -56,43 +58,48 @@ const StyledIconButton = styled(IconButton)(({ theme }) => ({
 
 
 export default function Header() {
-
+  const cartno =   useSelector((state)=>state.order.noOfItems)
     const navigate = useNavigate()
+    const pri = () =>{
+        console.log({cartno})
+    }
     return (
-      
-            <StyledAppbar position="fixed" sx={{top:'64px'}}>
-                <Toolbar>
-                    <Grid style={{ alignItems: "center" }} container spacing={1}>
-                        <Grid item md={2}>
-                            <img src={logo} alt="logo" style={{ width: "25%" }}></img>
-                            <img src={logoName} alt="logo" style={{ width: "60%" }}></img>
-                        </Grid>
-                        <Grid item md={3}>
-                            <Search></Search>
-                        </Grid>
-                        <Grid item md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
-                            <Button size="small" variant='contained' className='button' onClick={()=>navigate('/plan')}>MEDHA ADVANTAGE PLAN</Button>
-                        </Grid>
 
-
-                        <Grid item md={3}>
-                            <StyledTextButton size="small" startIcon={<UploadIcon />} onClick={()=>navigate('/upload')}>Upload Prescription</StyledTextButton>
-                            <StyledTextButton size="small" startIcon={<DownloadIcon />} >Download Reports</StyledTextButton>
-                        </Grid>
-                        <Grid item md={1}>
-                            <StyledIconButton aria-label="delete" onClick={()=>navigate('/cart')}>
-                                <ShoppingCartOutlinedIcon  />
-                            </StyledIconButton>
-                            <StyledIconButton aria-label="delete" >
-                                <WalletIcon />
-                            </StyledIconButton>
-                        </Grid>
+        <StyledAppbar position="fixed" sx={{ top: '64px' }}>
+            <Toolbar>
+                <Grid style={{ alignItems: "center" }} container spacing={1}>
+                    <Grid item md={2}>
+                        <img src={logo} alt="logo" style={{ width: "25%" }}></img>
+                        <img src={logoName} alt="logo" style={{ width: "60%" }}></img>
+                    </Grid>
+                    <Grid item md={3}>
+                        <Search></Search>
+                    </Grid>
+                    <Grid item md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
+                        <Button size="small" variant='contained' className='button' onClick={() => navigate('/plan')}>MEDHA ADVANTAGE PLAN</Button>
                     </Grid>
 
-                </Toolbar>
-            </StyledAppbar>
 
-     
+                    <Grid item md={3}>
+                        <StyledTextButton size="small" startIcon={<UploadIcon />} onClick={() => navigate('/upload')}>Upload Prescription</StyledTextButton>
+                        <StyledTextButton size="small" startIcon={<DownloadIcon />} >Download Reports</StyledTextButton>
+                    </Grid>
+                    <Grid item md={1}>
+                        <StyledIconButton aria-label="delete" onClick={() => navigate('/cart')}>
+                            <Badge ba badgeContent={cartno}  color="error">
+                                <ShoppingCartOutlinedIcon  />
+                            </Badge>
+                        </StyledIconButton>
+                        <StyledIconButton aria-label="delete" onClick={pri()} >
+                            <WalletIcon />
+                        </StyledIconButton>
+                    </Grid>
+                </Grid>
+
+            </Toolbar>
+        </StyledAppbar>
+
+
 
     );
 }

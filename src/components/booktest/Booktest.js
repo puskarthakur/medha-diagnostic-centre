@@ -40,8 +40,8 @@ function Booktest() {
                 </CardContent>
                 <StyledCardActions>
                     <Search></Search>
-                    <StyledButton size="small" variant='contained' className='btn'>Packages</StyledButton>
-                    <StyledButton size="small" variant='contained' className='btn'>MEDHA ADVANTAGE PLAN</StyledButton>
+                    <StyledButton size="small" variant='contained' className='button'>Packages</StyledButton>
+                    <StyledButton size="small" variant='contained' className='button'>MEDHA ADVANTAGE PLAN</StyledButton>
                 </StyledCardActions>
             </Card>
 

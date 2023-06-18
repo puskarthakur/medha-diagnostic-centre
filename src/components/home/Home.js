@@ -33,7 +33,7 @@ function Home() {
                 <div className="px-4 py-4">
                     <h2 className="mb-0 partner-heading">Partner With Us</h2>
                     <p className="mt-3 text-white">Clinical chemistry (also known as chemical pathology, clinical biochemistry or medical biochemistry) is concerned with analyzing bodily fluids for diagnostic and therapeutic purposes. The most common specimens tested in clinical chemistry are blood and urine.</p>
-                    <Button variant="contained" onClick={() => navigate('/patho')}>Read More</Button>
+                    <Button variant="contained" className="white-button" onClick={() => navigate('/partner')}>Read More</Button>
                 </div>
             </div>
 

@@ -41,9 +41,9 @@ function App() {
         <Route path="/partner" element={<Partner/>}></Route>
         <Route path="/check" element={<Healthcheck/>}></Route>
         <Route path="/diagnos" element={<Diagnostic/>}></Route>
-        <Route path="/patho" element={<Pathology/>}></Route>
-        <Route path="/radio" element={<Radiology/>}></Route>
-        <Route path="/cardio" element={<Cardiology/>}></Route>
+        <Route path="/pathology" element={<Pathology/>}></Route>
+        <Route path="/radiology" element={<Radiology/>}></Route>
+        <Route path="/cardiology" element={<Cardiology/>}></Route>
         <Route path="/care" element={<Healthcare/>}></Route>
         <Route path="/tests" element={<Tests/>}></Route>
         <Route path="/ame" element={<Amenity/>}></Route>

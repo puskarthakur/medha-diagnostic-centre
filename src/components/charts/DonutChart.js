@@ -22,7 +22,7 @@ const DonutChart = ({ items }) => {
 
                 // Adjust the startX position based on the available width within the chart
                 const chartWidth = chart.plotWidth;
-                const availableWidth = chartWidth - 20; // Leave some padding on the sides
+                // const availableWidth = chartWidth - 20; // Leave some padding on the sides
                 const textWidth = totalHeight; // Assuming each line has the same width
                 const startX = Math.max(centerX - textWidth / 2, chart.plotLeft + 10);
                 const endX = Math.min(
