@@ -5,8 +5,11 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import { useDispatch } from "react-redux";
+import addorder from '../../Actions/orderAction'
 
 export default function Featurecard(props) {
+  const dispatch = useDispatch();
     return (
         <div style={{padding: '10px 25px'}}>
  <Card sx={{ maxWidth: 350 }}>
@@ -22,7 +25,7 @@ export default function Featurecard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" variant="contained"  className='button' startIcon={<ShoppingCartOutlinedIcon />}>Add to Cart</Button>
+        <Button size="small" onClick={() => dispatch(addorder(props.title, props.title, 1))} variant="contained"  className='button'  startIcon={<ShoppingCartOutlinedIcon />}>Add to Cart</Button>
       </CardActions>
     </Card>
         </div>

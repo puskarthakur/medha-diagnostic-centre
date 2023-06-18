@@ -18,16 +18,13 @@ export default function Servicecard() {
             </div>
             <div className="container">
                 <div className="row">
-                    <div className="col-1 item1">
-                    </div>
                     <div className="col-2 item1">
+                    <div>
                         <Amenity iconClass={faMicroscope} name="Corporate wellness Program" />
                     </div>
+                    </div>
+                  
                     <div className="col-2">
-                        <div className="pb-4">
-                            <Amenity iconClass={faMicroscope} name="Corporate wellness Program" />
-                        </div>
-
                         <div>
                             <Amenity iconClass={faMicroscope} name="Corporate wellness Program" />
                         </div>
@@ -36,10 +33,7 @@ export default function Servicecard() {
                         <Amenity iconClass={faMicroscope} name="Corporate wellness Program" />
                     </div>
                     <div className="col-2  item2">
-                        <div className="pb-4">
-                            <Amenity iconClass={faMicroscope} name="Corporate wellness Program" />
-                        </div>
-                        <div>
+                        <div >
                             <Amenity iconClass={faMicroscope} name="Corporate wellness Program" />
                         </div>
                     </div>

@@ -2,7 +2,6 @@ import React from "react";
 import './Test.css'
 import Button from '@mui/material/Button';
 import Plancard from '../plan/Plancard'
-
 import Banner from '../banner/Banner';
 import bannerImage from '../../images/bannerImage.jpg';
 
