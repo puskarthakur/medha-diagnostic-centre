@@ -7,13 +7,18 @@ import Typography from '@mui/material/Typography';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { useDispatch } from "react-redux";
 import addorder from '../../Actions/orderAction'
+import './Plancard.css'
+import { useNavigate } from "react-router-dom";
+
+
 
 export default function Featurecard(props) {
   const dispatch = useDispatch();
+  const navigate = useNavigate()
     return (
-        <div style={{padding: '10px 25px'}}>
- <Card sx={{ maxWidth: 350 }}>
-      <CardContent >
+        <div style={{marginLeft: '10px'}} >
+ <Card sx={{ minWidth: 230}}>
+        <CardContent >
         <Typography gutterBottom variant="h5"  component="div">
         {props.title}
         </Typography>
@@ -25,7 +30,8 @@ export default function Featurecard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" onClick={() => dispatch(addorder(props.title, props.title, 1))} variant="contained"  className='button'  startIcon={<ShoppingCartOutlinedIcon />}>Add to Cart</Button>
+      <Button size="small"  onClick={() => dispatch(addorder(props.title, props.title, 1))} variant="contained"  className='button plan-btn'  startIcon={<ShoppingCartOutlinedIcon />}>Add to Cart</Button>
+        <Button size="small" onClick={()=>navigate('/details')} variant="contained"  className='button plan-btn' >Learn More</Button>
       </CardActions>
     </Card>
         </div>

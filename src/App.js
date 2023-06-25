@@ -22,6 +22,7 @@ import Healthcare from './components/healthcare/Healthcare';
 import Tests from './components/test/Tests';
 import Amenity from './components/amenity/Amenity';
 import Servicecard from './components/servicecard/Servicecard';
+import Testdetails from './components/testdetails/Testdetails';
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
         <Route path="/tests" element={<Tests/>}></Route>
         <Route path="/ame" element={<Amenity/>}></Route>
         <Route path="/serve" element={<Servicecard/>}></Route>
+    <Route path="/details" element={<Testdetails/>}></Route>
       </Routes>
     </div>
   );
