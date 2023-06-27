@@ -23,6 +23,7 @@ import Tests from './components/test/Tests';
 import Amenity from './components/amenity/Amenity';
 import Servicecard from './components/servicecard/Servicecard';
 import Testdetails from './components/testdetails/Testdetails';
+import Me from './components/why/Me'
 
 
 function App() {
@@ -32,24 +33,25 @@ function App() {
       <Header></Header>
       {/* <StaticCard></StaticCard> */}
       <Routes>
-        <Route path="/"  exact element={<Home/>}></Route>
-        <Route path="/about" element={<About/>}></Route>
-        <Route path="/appoint" element={<Appointment/>}></Route>
-        <Route path="/sample" element={<Sample/>}></Route>
-        <Route path="/upload" element={<Upload/>}></Route>
-        <Route path="/plan" element={<Advantage/>}></Route>
-        <Route path="/cart" element={<Cart/>}></Route>
-        <Route path="/partner" element={<Partner/>}></Route>
-        <Route path="/check" element={<Healthcheck/>}></Route>
-        <Route path="/diagnos" element={<Diagnostic/>}></Route>
-        <Route path="/pathology" element={<Pathology/>}></Route>
-        <Route path="/radiology" element={<Radiology/>}></Route>
-        <Route path="/cardiology" element={<Cardiology/>}></Route>
-        <Route path="/care" element={<Healthcare/>}></Route>
-        <Route path="/tests" element={<Tests/>}></Route>
-        <Route path="/ame" element={<Amenity/>}></Route>
-        <Route path="/serve" element={<Servicecard/>}></Route>
-    <Route path="/details" element={<Testdetails/>}></Route>
+        <Route path="/" exact element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/appoint" element={<Appointment />}></Route>
+        <Route path="/sample" element={<Sample />}></Route>
+        <Route path="/upload" element={<Upload />}></Route>
+        <Route path="/plan" element={<Advantage />}></Route>
+        <Route path="/cart" element={<Cart />}></Route>
+        <Route path="/partner" element={<Partner />}></Route>
+        <Route path="/check" element={<Healthcheck />}></Route>
+        <Route path="/diagnos" element={<Diagnostic />}></Route>
+        <Route path="/pathology" element={<Pathology />}></Route>
+        <Route path="/radiology" element={<Radiology />}></Route>
+        <Route path="/cardiology" element={<Cardiology />}></Route>
+        <Route path="/care" element={<Healthcare />}></Route>
+        <Route path="/tests" element={<Tests />}></Route>
+        <Route path="/ame" element={<Amenity />}></Route>
+        <Route path="/serve" element={<Servicecard />}></Route>
+        <Route path="/details" element={<Testdetails />}></Route>
+        <Route path='/why' element={<Me />} ></Route>
       </Routes>
     </div>
   );

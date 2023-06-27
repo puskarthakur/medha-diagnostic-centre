@@ -45,7 +45,7 @@ export function Navbar() {
             <a className="nav-link" href="/partner">Partner With US</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Why Medha</a>
+            <a className="nav-link" href="/why">Why Medha</a>
           </li>
           <div style={{display: 'flex', position: 'absolute', right: '2rem'}}>
           <li className="nav-item">
