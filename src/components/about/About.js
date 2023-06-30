@@ -152,12 +152,12 @@ export default function About() {
                                         <div className="img-wrap">
                                             <FounderImage
                                                 src="https://www.suburbandiagnostics.com/Content/assets/images/founder-sanjay-arora.jpg"
-                                                alt="Dr. Puskar Thakur - Founder"
+                                                alt="Dr. krishan - Founder"
                                             />
                                         </div>
                                         <div className="about-us-founder-details">
                                             <Typography variant="h2" className="mb-1 name" style={{ fontSize: '1.75rem' }}>
-                                                Dr. Puskar Thakur
+                                                Dr. krishan
                                             </Typography>
                                             <Typography variant="body1" className="mb-1 designation">
                                                 Founder

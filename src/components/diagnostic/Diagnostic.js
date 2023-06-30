@@ -18,7 +18,7 @@ export default function Diagnostic() {
                     imageHeight="8rem" // The height of the banner image
                 />
             </div>
-            <div class="container px-15 py-4">
+            <div className="container px-15 py-4">
                 <p>Almost 60-70% of diseases are preventable and treatable with timely assessment & intervention. In light of this, Suburban Diagnostics offers an array of comprehensive preventive health check-up packages, which provide a thorough evaluation of all the vital organs and systems present in the body. In addition, it can be customized to your needs by way of add-ons.</p>
             </div>
             <div className="p-container">

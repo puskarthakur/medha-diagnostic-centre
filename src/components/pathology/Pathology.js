@@ -16,7 +16,7 @@ export default function Pathology() {
                     imageHeight="8rem" // The height of the banner image
                 />
             </div>
-            <div class="container px-15 py-4">
+            <div className="container px-15 py-4">
                 <div className="row">
                     <div className="col-md-8">
                         <div className="content">
