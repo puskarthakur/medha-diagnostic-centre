@@ -59,9 +59,11 @@ const StyledIconButton = styled(IconButton)(({ theme }) => ({
 
 export default function Header() {
   const cartno =   useSelector((state)=>state.order.noOfItems)
+  const arrno =   useSelector((state)=>state.order.arr)
     const navigate = useNavigate()
     const pri = () =>{
         console.log({cartno})
+        console.log({arrno})
     }
     return (
 

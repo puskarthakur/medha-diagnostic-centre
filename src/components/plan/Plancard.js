@@ -17,7 +17,7 @@ export default function Featurecard(props) {
   const navigate = useNavigate()
     return (
         <div style={{marginLeft: '10px'}} >
- <Card sx={{ minWidth: 230}}>
+ <Card sx={{ minWidth: 250}} className="box">
         <CardContent >
         <Typography gutterBottom variant="h5"  component="div">
         {props.title}
@@ -25,13 +25,14 @@ export default function Featurecard(props) {
         <Typography variant="subtitle2"  >
         {props.content}
         </Typography>
-        <Typography variant="subtitle2"  >
+        <Typography variant="subtitle2"  className="price" >
         {props.price}
         </Typography>
       </CardContent>
       <CardActions>
       <Button size="small"  onClick={() => dispatch(addorder(props.title, props.title, 1))} variant="contained"  className='button plan-btn'  startIcon={<ShoppingCartOutlinedIcon />}>Add to Cart</Button>
         <Button size="small" onClick={()=>navigate('/details')} variant="contained"  className='button plan-btn' >Learn More</Button>
+        
       </CardActions>
     </Card>
         </div>

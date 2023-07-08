@@ -3,3 +3,7 @@
     text-transform: uppercase !important;
     font-weight: 750 !important;
 }
+.box:hover{
+  
+        background-color: #019a5d;  
+}

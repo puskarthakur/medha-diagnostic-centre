@@ -8,12 +8,12 @@ import { useState } from "react";
 import './Cart.css'
 
 export default function Cart() {
-  const [trigger, setTrigger] = useState({name: 'next',
+  const [trigger, setTrigger] = useState({name: '',
   salary: 0,
 });
     return (
-        <div  style={{ position: 'relative', top: '90px', paddingBottom: "40px" }}>
-          <Stepper trigger={trigger}></Stepper>
+        <div  style={{ marginTop: '160px', paddingBottom: "100px" }}>
+          {/* <Stepper trigger={trigger}></Stepper> */}
       <Orderdetails></Orderdetails>
       <div className="footer">
       <div>

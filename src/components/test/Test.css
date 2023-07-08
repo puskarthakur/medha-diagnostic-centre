@@ -13,10 +13,7 @@
 .box ul {
     list-style-type: none;
 }
-.test-container{
-    margin-top: 1rem;
-    border-top: 1px solid #c6c6c6;
-}
+
 .tests .search {
    
   
@@ -27,4 +24,104 @@
 }
 .search input { 
     width:40%
+}
+
+.heading {
+    background-color: #019a5d;
+    text-align: center;
+    color: white;
+}
+
+
+
+.form{
+    position: relative;
+}
+
+.form .fa-search{
+
+    position: absolute;
+    left: 1.2rem;
+    top: 0.5rem;
+    font-size: 1.2rem;
+
+}
+.btn-font {
+    font-size: 1rem !important;
+    position: relative;
+}
+
+.filter-page{
+    position: absolute;
+}
+
+.arrow{
+    position: absolute;
+}
+.arrow-inner {
+    border-style: solid;
+    _border-style: dashed;
+    border-width: 9px;
+    border-color: transparent;
+    border-top-width: 0;
+    border-bottom: 9px solid #fff;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: -45px;
+    left: 1080px;
+    background-color: #019a5d;
+}
+
+.form-input{
+
+    height: 45px;
+    text-indent: 33px;
+    border-radius: 10px;
+    border: 2px solid gray;
+  
+}
+
+.form-input:focus{
+
+    box-shadow: none !important;
+   
+}
+.test.plan-info{
+    background: aliceblue;
+
+}
+.test.plan{
+    margin-left: 0.2rem !important;
+}
+.link{
+    color:white;
+}
+.filter-text{
+    border: 1px solid grey;
+   margin-right: 0.3rem;
+    padding: 0.3rem 0.3rem;
+    border-radius: 2px;
+   width:25%;
+   font-size: 0.8rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+.filter-container{
+    background: #fff;
+    box-sizing: border-box;
+    padding: 14px;
+    margin: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.13);
+
+}
+
+.filter-box{
+   
+display: flex;
+flex-direction: row;
+align-content: center;
 }

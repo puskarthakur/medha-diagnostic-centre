@@ -1,7 +1,6 @@
 import { Box, IconButton, Typography } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import bannerImage from '../../images/bannerImage.jpg';
 import './Banner.css';
 
 const Banner = ({ icon, text, imageUrl }) => {
@@ -9,10 +8,10 @@ const Banner = ({ icon, text, imageUrl }) => {
     position: 'relative',
     display: 'flex',
     flexDirection: 'row',
-    backgroundImage: `url(${bannerImage})`,
+    backgroundImage: `url(${imageUrl})`,
     backgroundSize: '100%',
-    height: '8rem',
-    marginTop: '8rem'
+    height: '10rem',
+    marginTop: '8rem',
   };
 
   const bannerContent = {
@@ -33,6 +32,7 @@ const Banner = ({ icon, text, imageUrl }) => {
     color: 'white',
     fontSize: '2rem',
     fontWeight: 'bold',
+    wordWrap: 'break-word',
   };
 
   return (

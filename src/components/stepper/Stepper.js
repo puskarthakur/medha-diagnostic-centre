@@ -14,6 +14,7 @@ export default function HorizontalNonLinearStepper({trigger}) {
 
   useEffect(()=>{
     if(trigger.salary && trigger.name === 'Next') {
+      console.log('trigged')
       handleNext()
     } else {
         handleBack()
@@ -51,6 +52,7 @@ export default function HorizontalNonLinearStepper({trigger}) {
   };
 
   const handleStep = (step) => () => {
+    console.log(step)
     setActiveStep(step);
   };
 
@@ -70,7 +72,7 @@ export default function HorizontalNonLinearStepper({trigger}) {
 
   return (
     <Box sx={{ width: '80%', padding: '1.9rem' }}>
-      <Stepper Linear activeStep={activeStep}>
+      <Stepper  activeStep={activeStep}>
         {steps.map((label, index) => (
           <Step key={label} completed={completed[index]}>
             <StepButton color="inherit" onClick={handleStep(index)}>

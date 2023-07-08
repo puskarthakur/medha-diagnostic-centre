@@ -1,14 +1,21 @@
 import React, { useEffect, useRef } from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
+import { useNavigate  } from 'react-router-dom';
 
 const DonutChart = ({ items }) => {
     const chartRef = useRef(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const updateChartLabels = () => {
             if (chartRef.current) {
                 const chart = chartRef.current.chart;
+
+                // Remove existing labels
+                chart.renderer.box.parentNode.querySelectorAll('.custom-chart-label').forEach((label) => {
+                    label.parentNode.removeChild(label);
+                });
 
                 // Calculate the center position of the chart
                 const centerX = chart.plotWidth / 2 + chart.plotLeft;
@@ -22,34 +29,23 @@ const DonutChart = ({ items }) => {
 
                 // Adjust the startX position based on the available width within the chart
                 const chartWidth = chart.plotWidth;
-                // const availableWidth = chartWidth - 20; // Leave some padding on the sides
+                const availableWidth = chartWidth - 20; // Leave some padding on the sides
                 const textWidth = totalHeight; // Assuming each line has the same width
                 const startX = Math.max(centerX - textWidth / 2, chart.plotLeft + 10);
-                const endX = Math.min(
-                    startX + textWidth,
-                    chart.plotLeft + chartWidth - 10
-                );
+                const endX = Math.min(startX + textWidth, chart.plotLeft + availableWidth - 10);
 
                 textLines.forEach((line, index) => {
                     let label;
                     if (index === 2) {
                         // Display "365 Days" in one line
-                        label = chart.renderer.text(
-                            line,
-                            startX,
-                            startY + 20 + index * lineHeight,
-                            true
-                        );
+                        label = chart.renderer.text(line, startX, startY + 20 + index * lineHeight, true);
                     } else {
                         // Display other lines as usual
-                        label = chart.renderer.text(
-                            line,
-                            startX,
-                            startY + 20 + index * lineHeight
-                        );
+                        label = chart.renderer.text(line, startX, startY + 20 + index * lineHeight);
                     }
 
                     label
+                    .addClass('custom-chart-label')
                         .css({
                             color: '#000',
                             fontSize: '16px',
@@ -71,12 +67,21 @@ const DonutChart = ({ items }) => {
             }
         };
 
+        const chart = chartRef.current.chart;
+        if (chart) {
+            // Update chart labels when the chart is redrawn
+            chart.update({ chart: { events: { redraw: updateChartLabels } } });
+        }
+
         updateChartLabels();
+
         window.addEventListener('resize', updateChartLabels);
         return () => {
             window.removeEventListener('resize', updateChartLabels);
         };
     }, [items]);
+
+
 
     const handleChartItemClick = (event) => {
         // Get the clicked item's name
@@ -85,8 +90,8 @@ const DonutChart = ({ items }) => {
         // Perform any logic based on the clicked item
 
         // Example: Open respective component based on the clicked item
-        if (itemName === 'Menu 1') {
-            console.log('ABC1');
+        if (itemName === 'ECG') {
+            navigate('/why');
         } else if (itemName === 'Menu2') {
             console.log('ABC2');
         } else if (itemName === 'Menu3') {
@@ -106,7 +111,7 @@ const DonutChart = ({ items }) => {
         tooltip: { enabled: false },
         plotOptions: {
             pie: {
-                innerSize: '60%',
+                innerSize: '50%',
                 dataLabels: {
                     enabled: true,
                     format: '<b>{point.name}</b>',
@@ -120,13 +125,13 @@ const DonutChart = ({ items }) => {
                 },
                 events: {
                     click: handleChartItemClick,
-                    load: function() {
+                    load: function () {
                         var center = this.series[0].center;
-        
+
                         this.renderer.circle(
-                                center[0],
-                                center[1],
-                                (this.plotHeight - this.spacingBox.y * 2) / 2)
+                            center[0],
+                            center[1],
+                            (this.plotHeight - this.spacingBox.y * 2) / 2)
                             .attr({
                                 fill: 'green'
                             }).add();

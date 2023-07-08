@@ -1,3 +1,46 @@
 .test-card {
     margin-bottom: 0.8rem !important;
 }
+
+
+.heading {
+    background-color: #019a5d;
+    text-align: center;
+    color: white;
+}
+.details-container{
+    background-color: #55F0A3;
+    border-bottom: 2px solid #96A0AC;
+    
+}
+
+.plan-info{
+    background: #559EF0;
+    color: white;
+
+}
+.plan{
+    margin-left: 0.2rem !important;
+}
+.member {
+    font-size: 0.95rem;
+    text-align: center;
+}
+.space{
+    margin-right: 1.4rem !important;
+}
+.px{
+ padding-left: 1.6rem !important;
+ padding-right: 1.6rem !important;
+}
+
+.px-plan{
+    padding-left: 2.3rem !important;
+    padding-right: 1.6rem !important;
+}
+.details{
+    border-bottom: 1.5px solid #96A0AC; ;
+}
+.link{
+    color:white;
+}
