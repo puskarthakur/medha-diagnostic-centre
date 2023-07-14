@@ -7,7 +7,14 @@ import StaticCard from '../floatcard/StaticCard'
 import Servicecard from "../servicecard/Servicecard";
 import Button from '@mui/material/Button';
 import { useNavigate } from "react-router-dom";
+import mount from '../../images/mount.jpg'
 import './Home.css'
+
+
+const images = [
+    { img: mount },
+    { img: mount }
+]
 
 // import { StaticCard } from './StaticCard'
 function Home() {
@@ -18,7 +25,7 @@ function Home() {
             <div className="container mx-0">
                 <div className="row px-0 py-0">
                     <div className="col-8">
-                        <Slideshow />
+                        <Slideshow  images={images} />
                     </div>
                     <div className="col-4 pt-3">
                         <Booktest />
