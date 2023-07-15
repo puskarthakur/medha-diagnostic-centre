@@ -1,13 +1,5 @@
 import React from 'react';
 import './TeamGrid.css'; // CSS file for styling
-import CT from '../../images/CT.jpg';
-import MRI from '../../images/MRI.jpg';
-import TET from  '../../images/TET.jpg';
-import EEG from  '../../images/EEG.jpg';
-
-
-
-
 
 const TeamGrid = (images) => {
     return (

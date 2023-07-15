@@ -36,8 +36,8 @@ export function Navbar() {
               Services
             </a>
             <div className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`} aria-labelledby="navbarDropdown">
-              <a className="dropdown-item" href="/check">Health Check-ups</a>
-              <a className="dropdown-item" href="/diagnos">Diagnostic Services</a>
+              <a className="dropdown-item" href="/rs">Radiology Services</a>
+              <a className="dropdown-item" href="/lab">Lab Services</a>
               <a className="dropdown-item" href="care">Home HealthCare</a>
             </div>
           </li>
