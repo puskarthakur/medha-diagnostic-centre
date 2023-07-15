@@ -16,7 +16,6 @@ import Healthcheck from './components/healthcheck/Healthcheck';
 import Diagnostic from './components/diagnostic/Diagnostic';
 import About from './components/about/About'
 import Pathology from './components/pathology/Pathology';
-import Radiology from './components/radiology/Radiology';
 import Cardiology from './components/cardiology/Cardiology';
 import Healthcare from './components/healthcare/Healthcare';
 import Tests from './components/test/Tests';
@@ -46,7 +45,6 @@ function App() {
         <Route path="/check" element={<Healthcheck />}></Route>
         <Route path="/diagnos" element={<Diagnostic />}></Route>
         <Route path="/pathology" element={<Pathology />}></Route>
-        <Route path="/radiology" element={<Radiology />}></Route>
         <Route path="/cardiology" element={<Cardiology />}></Route>
         <Route path="/care" element={<Healthcare />}></Route>
         <Route path="/tests" element={<Tests />}></Route>

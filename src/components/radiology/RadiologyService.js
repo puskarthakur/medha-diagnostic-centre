@@ -1,43 +1,44 @@
 import React from "react";
-import mount from '../../images/mount.jpg'
 import Slideshow from "../slideshow/Slideshow";
 import CT from '../../images/CT.jpg';
 import EEG from '../../images/EEG.jpg';
 import XRAY from '../../images/XRAY.jpg'
 import MRI from '../../images/MRI.jpg'
 import TET from '../../images/TET.jpg'
-import MED from '../../images/Whymedha.jpg'
+import team from '../../images/team.jpg'
+import Radiology from '../../images/Radiology.jpg'
 import ImageGrid from "../common/ImageGrid";
 import TeamGrid from "../common/TeamGrid";
+import './Radiology.css';
 
+const slideButtons = [
+    {
+        btnName: 'BookTest',
+        btnPath: '/appoint'
+    },
 
+    {
+        btnName: 'Know More',
+        btnPath: '/appoint'
+    }
+
+]
 
 const slideImages = [
     {
-        img: MED,
-        name: 'CT'
+        img: Radiology,
     },
     {
-        img: MED,
-        name: 'MRI'
+        img: Radiology,
     },
     {
-        img: MED,
-        name: 'TET'
-    },
-    {
-        img: MED,
-        name: 'EEG'
-    },
-    {
-        img: MED,
-        name: 'EEG'
+        img: Radiology,
     }
 ]
 const radioImages = [
     {
         img: CT,
-        name: 'CT',
+        name: 'CT Scan',
         path: '/ct'
     },
     {
@@ -47,20 +48,21 @@ const radioImages = [
     },
     {
         img: TET,
-        name: 'TET',
+        name: 'TMT',
         path: '/tet'
     },
     {
         img: EEG,
+        name: '3D/4D Ultrasound',
         path: '/eeg'
     },
     {
         img: EEG,
-        name: 'EEG'
+        name: 'Mammography'
     },
     {
         img: EEG,
-        name: 'EEG'
+        name: 'EEG/ENMG'
     },
     {
         img: XRAY,
@@ -71,39 +73,39 @@ const radioImages = [
 
 const TeamImages = [
     {
-        img: CT,
+        img: team,
         name: 'Dr.rao'
     },
     {
-        img: MRI,
+        img: team,
         name: 'Dr.anjali'
     },
     {
-        img: TET,
+        img: team,
         name: 'Dr.Moni'
     },
     {
-        img: EEG,
+        img: team,
         name: 'Dr.vicky'
     },
     {
-        img: EEG,
+        img: team,
         name: 'Dr.vicky'
     }
 ]
-export default function RadiologyService(){
-    return(
-        <div style={{ marginTop: '143px' }}>
-            <div className="heading">
-                <h6>RADIOLOGY & CARDIOLOGY SERVICES</h6>
+export default function RadiologyService() {
+    return (
+        <div style={{ marginTop: '143px', backgroundColor: "#389CA6" }} className="">
+            <div className="rs-heading">
+                <h6 className="rs-subheading">RADIOLOGY & CARDIOLOGY SERVICES</h6>
             </div>
-        <Slideshow images={slideImages}></Slideshow>
-      
-<div >
-  <ImageGrid images={radioImages}/>
-<TeamGrid images={TeamImages}/>
-</div>
-      
+            <Slideshow images={slideImages} slideButtons={slideButtons}></Slideshow>
+
+            <div className="px-3" >
+                <ImageGrid images={radioImages} />
+                <TeamGrid images={TeamImages} />
+            </div>
+
         </div>
     )
 }

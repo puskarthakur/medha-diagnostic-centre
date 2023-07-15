@@ -3,6 +3,24 @@
     font-size: 1em;
 }
 
+.rs-heading {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+.rs-button{
+    background-color: #5B9BD5 !important;
+    color: white !important;
+    text-transform: none !important;
+    margin-right: 0.2rem !important;
 
+}
+.rs-button:hover{
+    background-color: none !important;
+   
+}
+.rs-subheading{
+    margin-bottom: 0rem !important;
 
+}
 

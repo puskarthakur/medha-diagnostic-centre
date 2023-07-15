@@ -19,7 +19,9 @@
   }
   .im-co{
   
-    width:150px !important ;
+    width:168px !important ;
+    padding: 8px 0px;
+ 
   
 }
 .image-grid{
@@ -29,5 +31,24 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 15px 0px;
+    padding: 0px 5px;
+    background-color: white
+}
+a{
+  color: black !important ;
+  text-decoration: none !important;
+
+}
+a:hover{
+  color: none !important;
+}
+img{
+  border: 2px solid #e6e6e6;;
+}
+.image-card{
+  font-size: 0.9rem;
+  display: block;
+  text-align: center;
+  padding: 0.3rem;
 }
