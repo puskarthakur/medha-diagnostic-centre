@@ -26,6 +26,8 @@ import Testdetails from './components/testdetails/Testdetails';
 import Me from './components/why/Me'
 import RadiologyService from './components/radiology/RadiologyService';
 import Mri from './components/radiology/Mri';
+import MRI from './components/testservices/MRI';
+
 
 
 function App() {
@@ -56,6 +58,7 @@ function App() {
         <Route path='/why' element={<Me />} ></Route>
         <Route path='/rs' element={<RadiologyService/>} ></Route>
         <Route path='/mri' element={<Mri/>} ></Route>
+        <Route path='/MRI' element={<MRI />} ></Route>
       </Routes>
     </div>
   );

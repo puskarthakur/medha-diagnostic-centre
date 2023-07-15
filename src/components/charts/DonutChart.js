@@ -90,8 +90,8 @@ const DonutChart = ({ items }) => {
         // Perform any logic based on the clicked item
 
         // Example: Open respective component based on the clicked item
-        if (itemName === 'ECG') {
-            navigate('/why');
+        if (itemName === 'MRI') {
+            navigate('/MRI');
         } else if (itemName === 'Menu2') {
             console.log('ABC2');
         } else if (itemName === 'Menu3') {
@@ -108,14 +108,17 @@ const DonutChart = ({ items }) => {
         title: {
             text: null,
         },
-        tooltip: { enabled: false },
+        tooltip: {
+            pointFormat: '<b></b>',
+          },
         plotOptions: {
             pie: {
                 innerSize: '50%',
+                size:'110%',
                 dataLabels: {
                     enabled: true,
                     format: '<b>{point.name}</b>',
-                    distance: -40, // Adjust the distance of labels from the center
+                    distance: -50, // Adjust the distance of labels from the center
                     style: {
                         textOutline: 'none',
                         color: 'black',
@@ -138,9 +141,9 @@ const DonutChart = ({ items }) => {
                     }
                 },
             },
-            tooltip: {
-                pointFormat: null, // Disable tooltip for each data point
-            },
+            // tooltip: {
+            //     pointFormat: '<b>{point.name}</b>', // Disable tooltip for each data point
+            // },
         },
         series: [
             {
@@ -154,7 +157,7 @@ const DonutChart = ({ items }) => {
     };
 
     return (
-        <HighchartsReact highcharts={Highcharts} options={options} ref={chartRef} />
+        <HighchartsReact highcharts={Highcharts} options={options} ref={chartRef} allowChartUpdate={true} />
     );
 };
 

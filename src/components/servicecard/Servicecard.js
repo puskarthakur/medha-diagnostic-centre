@@ -5,7 +5,7 @@ import { faMicroscope } from '@fortawesome/free-solid-svg-icons';
 import DonutChart from '../charts/DonutChart';
 
 export default function Servicecard() {
-    const items = ['ECG', 'Menu2', 'Menu3', 'Menu4', 'Menu5', 'Menu6', 'ECG'];
+    const items = ['LAB', 'Ultrasound', 'CT Scan', 'MRI', 'X-Ray', 'Mammography', 'TMT', 'EEG/ENMG'];
     return (
         <div className="service mb-4">
 
