@@ -62,7 +62,7 @@ export default function Mri() {
     return (
         <div style={{ marginTop: '150px', backgroundColor: '#19A5A0' }}>
               <div className="rs-heading">
-                <h6 className="rs-subheading">MRI</h6>
+                <h6 className="rs-subheading">TMT</h6>
             </div>
             <Slideshow images={slideImages} slideButtons={slideButtons}></Slideshow>
             <div className="px-4">
