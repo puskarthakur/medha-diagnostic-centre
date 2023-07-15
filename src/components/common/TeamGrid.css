@@ -1,0 +1,27 @@
+.team-card{
+  
+    width:180px ;
+  
+}
+.container-fluid{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 820px) {
+  .im-co{
+    width:50%
+  }
+  }
+
+  @media (max-width: 480px) {
+   .im-co{
+    width:100%
+   }
+  }  

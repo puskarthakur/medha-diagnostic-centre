@@ -23,7 +23,11 @@ import Tests from './components/test/Tests';
 import Amenity from './components/amenity/Amenity';
 import Servicecard from './components/servicecard/Servicecard';
 import Testdetails from './components/testdetails/Testdetails';
+import Me from './components/why/Me'
+import RadiologyService from './components/radiology/RadiologyService';
+import Mri from './components/radiology/Mri';
 import MRI from './components/testservices/MRI';
+
 
 
 function App() {
@@ -51,6 +55,9 @@ function App() {
         <Route path="/ame" element={<Amenity />}></Route>
         <Route path="/serve" element={<Servicecard />}></Route>
         <Route path="/details" element={<Testdetails />}></Route>
+        <Route path='/why' element={<Me />} ></Route>
+        <Route path='/rs' element={<RadiologyService/>} ></Route>
+        <Route path='/mri' element={<Mri/>} ></Route>
         <Route path='/MRI' element={<MRI />} ></Route>
       </Routes>
     </div>

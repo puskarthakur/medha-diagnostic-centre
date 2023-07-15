@@ -1,0 +1,33 @@
+
+  
+  /* Media Queries */
+  
+  /* For medium-sized screens */
+
+  @media (max-width: 820px) {
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr); /* Display 3 images per row */
+      align-content: center;
+    }
+  }
+  
+  /* For small-sized screens */
+  @media (max-width: 480px) {
+    .image-grid {
+      grid-template-columns: repeat(1, 1fr); /* Display 2 image per row */
+    }
+  }
+  .im-co{
+  
+    width:150px !important ;
+  
+}
+.image-grid{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
