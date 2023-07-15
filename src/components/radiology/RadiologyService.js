@@ -4,7 +4,9 @@ import CT from '../../images/CT.jpg';
 import EEG from '../../images/EEG.jpg';
 import XRAY from '../../images/XRAY.jpg'
 import MRI from '../../images/MRI.jpg'
-import TET from '../../images/TET.jpg'
+import TMT from '../../images/TMT.jpg'
+import Ultrasound from '../../images/Ultrasound.jpg'
+import Mammography from '../../images/Mammography.jpg'
 import team from '../../images/team.jpg'
 import Radiology from '../../images/Radiology.jpg'
 import ImageGrid from "../common/ImageGrid";
@@ -27,12 +29,31 @@ const slideButtons = [
 const slideImages = [
     {
         img: Radiology,
+        title: "CT Scan"
     },
     {
         img: Radiology,
+        title: "MRI"
     },
     {
         img: Radiology,
+        title: "TMT"
+    },
+    {
+        img: Radiology,
+        title: "Ultrasound"
+    },
+    {
+        img: Radiology,
+        title: "Mammography"
+    },
+    {
+        img: Radiology,
+        title: "EEG"
+    },
+    {
+        img: Radiology,
+        title: "X-RAY"
     }
 ]
 const radioImages = [
@@ -47,17 +68,17 @@ const radioImages = [
         path: '/mri'
     },
     {
-        img: TET,
+        img: TMT,
         name: 'TMT',
-        path: '/tet'
+        path: '/tmt'
     },
     {
-        img: EEG,
+        img: Ultrasound,
         name: '3D/4D Ultrasound',
-        path: '/eeg'
+        path: '/ultra'
     },
     {
-        img: EEG,
+        img: Mammography,
         name: 'Mammography'
     },
     {

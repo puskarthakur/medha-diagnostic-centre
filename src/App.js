@@ -26,6 +26,7 @@ import Me from './components/why/Me'
 import RadiologyService from './components/radiology/RadiologyService';
 import Mri from './components/radiology/Mri';
 import MRI from './components/testservices/MRI';
+import Lab from './components/lab/LabService'
 
 
 
@@ -57,6 +58,7 @@ function App() {
         <Route path='/rs' element={<RadiologyService/>} ></Route>
         <Route path='/mri' element={<Mri/>} ></Route>
         <Route path='/MRI' element={<MRI />} ></Route>
+        <Route path='/lab' element={<Lab />} ></Route>
       </Routes>
     </div>
   );

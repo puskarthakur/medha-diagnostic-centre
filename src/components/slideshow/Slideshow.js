@@ -55,7 +55,7 @@ export default function Slideshow(props) {
             </div>
             <div className="text-overlay">
                 {/* Render your text overlay content here */}
-                <h2>MRI SCAN</h2>
+                <h2>{props.images[index].title}</h2>
             </div>
             {renderSliderButton()}
 

@@ -1,42 +1,12 @@
+.mri-sub{
+    color: white !important;
+    margin-bottom: 0rem !important;
+    padding: 8px;
+    padding: 8px 0px;
 
-
-
-
-.homecare .list-counter {
-    font-family: latobold;
-    font-size: 1.2em;
-    flex: 0 0 2.143em;
-    max-width: 2.143em;
-    height: 2.143em;
-    border-radius: 1.786em;
-    border: 0.179em solid #19A5A0;
-    display: flex;
-    align-items: center;
-    margin-right: 0.857em;
-    justify-content: center;
-    color: #19A5A0;
 }
-
-
-.homecare .p-container {
-
-    padding: 0em 4em;
-}
-
-.homecare {
-    padding-bottom: 3rem;
-}
-
-.homecare .package-text {
-    margin-top: 0;
-    margin-bottom: 0 !important;
-    padding: 0rem 1.4rem;
-}
-
-.homecare .package {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #DAF8F7;
-    padding: 1.5em 4em;
+.mri-desc{
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #ffffff;
 }
