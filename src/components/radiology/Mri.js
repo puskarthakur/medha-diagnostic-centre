@@ -1,5 +1,6 @@
 
 import React from "react";
+import Radiology from '../../images/Radiology.jpg'
 import MED from '../../images/Whymedha.jpg'
 import team from '../../images/team.jpg'
 import Slideshow from "../slideshow/Slideshow";
@@ -16,24 +17,32 @@ const slideButtons = [
 ]
 const slideImages = [
     {
-        img: MED,
-        name: 'CT'
+        img: Radiology,
+        title: "CT Scan"
     },
     {
-        img: MED,
-        name: 'MRI'
+        img: Radiology,
+        title: "MRI"
     },
     {
-        img: MED,
-        name: 'TET'
+        img: Radiology,
+        title: "TMT"
     },
     {
-        img: MED,
-        name: 'EEG'
+        img: Radiology,
+        title: "Ultrasound"
     },
     {
-        img: MED,
-        name: 'EEG'
+        img: Radiology,
+        title: "Mammography"
+    },
+    {
+        img: Radiology,
+        title: "EEG"
+    },
+    {
+        img: Radiology,
+        title: "X-RAY"
     }
 ]
 const TeamImages = [

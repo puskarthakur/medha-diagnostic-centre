@@ -3,23 +3,23 @@
     font-size: 1em;
 }
 
-.rs-heading {
+.lab-heading {
     text-align: center;
     color: white;
     padding: 10px;
 }
-.rs-button{
+.lab-button{
     background-color: #5B9BD5 !important;
     color: white !important;
     text-transform: none !important;
     margin-right: 0.2rem !important;
 
 }
-.rs-button:hover{
+.lab-button:hover{
     background-color: none !important;
    
 }
-.rs-subheading{
+.lab-subheading{
     margin-bottom: 0rem !important;
 }
 

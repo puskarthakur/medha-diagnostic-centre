@@ -25,6 +25,7 @@ import Testdetails from './components/testdetails/Testdetails';
 import Me from './components/why/Me'
 import RadiologyService from './components/radiology/RadiologyService';
 import Mri from './components/radiology/Mri';
+import Lab from './components/lab/LabService';
 import CTScan from './components/radiology/CTScan';
 import Eeg from './components/radiology/Eeg';
 import Lab from './components/radiology/Lab';
@@ -60,6 +61,7 @@ function App() {
         <Route path='/why' element={<Me />} ></Route>
         <Route path='/rs' element={<RadiologyService/>} ></Route>
         <Route path='/mri' element={<Mri/>} ></Route>
+        <Route path='/lab' element={<Lab />} ></Route>
         <Route path='/ultrasound' element={<Ultrasound/>} ></Route>
         <Route path='/tmt' element={<Tmt/>} ></Route>
         <Route path='/mammography' element={<Mammography/>} ></Route>

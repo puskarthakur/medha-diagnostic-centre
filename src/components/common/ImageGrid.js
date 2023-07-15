@@ -1,9 +1,5 @@
 import React from 'react';
 import './ImageGrid.css'; // CSS file for styling
-import CT from '../../images/CT.jpg';
-import MRI from '../../images/MRI.jpg';
-import TET from '../../images/TET.jpg';
-import EEG from '../../images/EEG.jpg';
 
 import { useNavigate } from 'react-router-dom';
 
