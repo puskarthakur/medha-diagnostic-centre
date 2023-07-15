@@ -1,6 +1,5 @@
 
 import React from "react";
-import Radiology from '../../images/Radiology.jpg'
 import MED from '../../images/Whymedha.jpg'
 import team from '../../images/team.jpg'
 import Slideshow from "../slideshow/Slideshow";
@@ -17,32 +16,24 @@ const slideButtons = [
 ]
 const slideImages = [
     {
-        img: Radiology,
-        title: "CT Scan"
+        img: MED,
+        name: 'CT'
     },
     {
-        img: Radiology,
-        title: "MRI"
+        img: MED,
+        name: 'MRI'
     },
     {
-        img: Radiology,
-        title: "TMT"
+        img: MED,
+        name: 'TET'
     },
     {
-        img: Radiology,
-        title: "Ultrasound"
+        img: MED,
+        name: 'EEG'
     },
     {
-        img: Radiology,
-        title: "Mammography"
-    },
-    {
-        img: Radiology,
-        title: "EEG"
-    },
-    {
-        img: Radiology,
-        title: "X-RAY"
+        img: MED,
+        name: 'EEG'
     }
 ]
 const TeamImages = [
@@ -71,7 +62,7 @@ export default function Mri() {
     return (
         <div style={{ marginTop: '150px', backgroundColor: '#19A5A0' }}>
               <div className="rs-heading">
-                <h6 className="rs-subheading">MRI</h6>
+                <h6 className="rs-subheading">CT Scan</h6>
             </div>
             <Slideshow images={slideImages} slideButtons={slideButtons}></Slideshow>
             <div className="px-4">
