@@ -1,7 +1,6 @@
 
 import React from "react";
 import Radiology from '../../images/Radiology.jpg'
-import MED from '../../images/Whymedha.jpg'
 import team from '../../images/team.jpg'
 import Slideshow from "../slideshow/Slideshow";
 import TeamGrid from "../common/TeamGrid";

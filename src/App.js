@@ -28,7 +28,6 @@ import Mri from './components/radiology/Mri';
 import Lab from './components/lab/LabService';
 import CTScan from './components/radiology/CTScan';
 import Eeg from './components/radiology/Eeg';
-import Lab from './components/radiology/Lab';
 import Xray from './components/radiology/Xray';
 import Mammography from './components/radiology/Mammography';
 import Tmt from './components/radiology/Tmt';
