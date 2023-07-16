@@ -67,16 +67,16 @@ export default function Mri() {
             <Slideshow images={slideImages} slideButtons={slideButtons}></Slideshow>
             <div className="px-4">
                 <h6 className="mri-sub">Description</h6>
-                <p className="mri-desc mb-2">Medha Diagnostic Centre in Nellore is delighted to offer state-of-the-art MRI scan services to the community. With the latest GE MRI 1.5T technology and a team of highly qualified doctors, we provide exceptional diagnostic
-                    imaging services while upholding the highest standards of healthcare in the city of Nellore.</p>
-                <p className="mri-desc mb-2">Our GE MRI 1.5T scanner is at the forefront of imaging technology, delivering detailed and high-resolution images of internal body structures. MRI scans are invaluable in diagnosing a wide range of medical conditions, aiding in accurate treatment planning and patient care. Our experienced doctors possess extensive expertise in interpreting MRI images, ensuring precise and comprehensive evaluations.
-                    At Medha Diagnostic Centre, patient well-being and comfort are paramount. Our facility is equipped with the latest GE MRI 1.5T scanner, renowned for its advanced imaging capabilities and patient-friendly design. We follow stringent quality protocols and best practices to ensure accurate and reliable diagnostic results, while prioritizing patient safety.</p>
+                <p className="mri-desc mb-2">Medha Diagnostic Centre in Nellore takes pride in offering top-quality X-Ray services to the community. With a team of highly qualified doctors and a commitment to upholding the highest standards of healthcare, we provide exceptional diagnostic imaging services in the city of Nellore.</p>
+                <p className="mri-desc mb-2">Our state-of-the-art X-Ray technology allows for accurate and precise imaging of various body parts, aiding in the diagnosis and treatment of a wide range of medical conditions. Our experienced doctors possess extensive expertise in interpreting X-Ray images, ensuring reliable and comprehensive evaluations.</p>
                 <p className="mri-desc mb-2">
-                    Our highly qualified doctors work closely with our dedicated team of technologists and healthcare professionals to provide personalized care and support throughout the MRI scan process. They bring a wealth of knowledge and experience to the interpretation of MRI images, ensuring precise diagnoses and effective treatment recommendations.
+                At Medha Diagnostic Centre, patient well-being and satisfaction are our utmost priorities. Our facility is equipped with advanced X-Ray equipment, providing a comfortable and seamless imaging experience for our valued patients. We adhere to stringent quality protocols and follow best practices in diagnostic imaging to ensure accurate results and patient safety.
                 </p>
-                <p className="mri-desc mb-2">When you choose Medha Diagnostic Centre in Nellore, you can trust that you will receive top-quality MRI scan services. Our commitment to maintaining the highest standards of healthcare, coupled with the latest GE MRI 1.5T technology and a team of skilled professionals, ensures that you receive exceptional imaging services for accurate and reliable diagnoses.</p>
+                <p className="mri-desc mb-2">
+                Whether you require a routine X-Ray examination or a specialized imaging procedure, Medha Diagnostic Centre is your trusted destination in Nellore. Our dedicated team is committed to delivering compassionate care, precise diagnostics, and personalized attention to each patient.
+                </p>
                 <p className="mri-desc mb-2 pb-4">
-                    Visit Medha Diagnostic Centre in Nellore to access our advanced MRI scan services. Experience the excellence of our GE MRI 1.5T technology, delivered by highly qualified doctors and a dedicated healthcare team, all aimed at providing the highest quality standards in diagnostic imaging in the city.
+                Visit Medha Diagnostic Centre in Nellore and avail yourself of our X-Ray services, delivered by highly qualified doctors who maintain the highest standards of healthcare in the city. Experience the excellence of our diagnostic imaging services and rest assured that your well-being is in capable hands.
                 </p>
                 <TeamGrid images={TeamImages}></TeamGrid>
             </div>
