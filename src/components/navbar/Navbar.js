@@ -39,6 +39,8 @@ export function Navbar() {
               <a className="dropdown-item" href="/rs">Radiology Services</a>
               <a className="dropdown-item" href="/lab">Lab Services</a>
               <a className="dropdown-item" href="care">Home HealthCare</a>
+              <a className="dropdown-item" href="care">Health Packages</a>
+              <a className="dropdown-item" href="care">Medha Advantage Plan</a>
             </div>
           </li>
           <li className="nav-item">

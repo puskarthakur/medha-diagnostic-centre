@@ -9,7 +9,7 @@ const TeamGrid = (images) => {
             {images.images.map((i,index)=>{
             return(
                 <div className='team-card'>
-                <img src={i.img} className='image' style={{width:'100%'}}/>
+                <img src={i.img} className='image' style={{width:'100%'}} alt='medhateam'/>
                 <p className='my-2 doc-name'>{i.name}</p>
             </div>
             )

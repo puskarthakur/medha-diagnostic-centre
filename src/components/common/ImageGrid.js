@@ -1,15 +1,6 @@
 import React from 'react';
 import './ImageGrid.css'; // CSS file for styling
-import { useNavigate } from 'react-router-dom';
-
-
-
-
-
 const ImageGrid = (images) => {
-    const navigate = useNavigate()
-
-
     return (
         <div>
             <div className="image-grid">
@@ -18,7 +9,7 @@ const ImageGrid = (images) => {
                     return (
                         <div className='im-co' key={index} >
                             <a href={i.path}>
-                                <img src={i.img} alt="Image" className='image' style={{ width: '100%', height: '50%' }} />
+                                <img src={i.img} alt="medhaImage" className='image' style={{ width: '100%', height: '50%' }} />
                                 <span className='image-card'>{i.name}</span>
                             </a>
 

@@ -10,11 +10,10 @@
 #menu li{
     display: inline;
     padding: 0 10px;
-    border-left: solid 1px white;
+    border-left: solid 2px black;
     color: white;
   }
-  .heading {
-    background-color:#019a5d ;
+  .medha-plan-heading {
     text-align: center;
     color: white;
     padding: 10px;
@@ -27,4 +26,48 @@
 }
 p{
 line-height: 1.4rem;
+}
+.medha-plan{
+  background-color: #00B0F0 !important;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th {
+  border: 1px solid #dddddd !important;
+  text-align: center;
+  padding: 4px;
+}
+
+.plan-table{
+  text-align: center;
+  margin: auto;
+  position: relative;
+  left: 10%;
+  right:10%;
+  padding-bottom: 30px;
+
+}
+.t-header{
+color: white !important;
+}
+.d-header{
+font-weight: bold !important;
+}
+.d-rows{
+  background-color: #fff !important;
+}
+
+.p-row{
+  background-color: black !important;
+  color: #fff !important;
+}
+.t-button{
+  background-color: rgb(63, 201, 63) !important;
+  color: #fff !important;
+  font-size: 0.8rem !important;
 }
