@@ -25,10 +25,13 @@ import Testdetails from './components/testdetails/Testdetails';
 import Me from './components/why/Me'
 import RadiologyService from './components/radiology/RadiologyService';
 import Mri from './components/radiology/Mri';
-import MRI from './components/testservices/MRI';
-import Lab from './components/lab/LabService'
-
-
+import Lab from './components/lab/LabService';
+import CTScan from './components/radiology/CTScan';
+import Eeg from './components/radiology/Eeg';
+import Xray from './components/radiology/Xray';
+import Mammography from './components/radiology/Mammography';
+import Tmt from './components/radiology/Tmt';
+import Ultrasound from './components/radiology/Ultrasound';
 
 function App() {
   return (
@@ -57,8 +60,14 @@ function App() {
         <Route path='/why' element={<Me />} ></Route>
         <Route path='/rs' element={<RadiologyService/>} ></Route>
         <Route path='/mri' element={<Mri/>} ></Route>
-        <Route path='/MRI' element={<MRI />} ></Route>
         <Route path='/lab' element={<Lab />} ></Route>
+        <Route path='/ultrasound' element={<Ultrasound/>} ></Route>
+        <Route path='/tmt' element={<Tmt/>} ></Route>
+        <Route path='/mammography' element={<Mammography/>} ></Route>
+        <Route path='/xray' element={<Xray/>} ></Route>
+        <Route path='/lab' element={<Lab/>} ></Route>
+        <Route path='/eeg' element={<Eeg/>} ></Route>
+        <Route path='/ct' element={<CTScan/>} ></Route>
       </Routes>
     </div>
   );

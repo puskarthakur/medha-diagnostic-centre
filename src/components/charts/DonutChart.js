@@ -91,11 +91,21 @@ const DonutChart = ({ items }) => {
 
         // Example: Open respective component based on the clicked item
         if (itemName === 'MRI') {
-            navigate('/MRI');
-        } else if (itemName === 'Menu2') {
-            console.log('ABC2');
-        } else if (itemName === 'Menu3') {
-            console.log('ABC3');
+            navigate('/mri');
+        } else if (itemName === 'Ultrasound') {
+            navigate('/ultrasound');
+        } else if (itemName === 'LAB') {
+            navigate('/lab');
+        } else if (itemName === 'CT Scan') {
+            navigate('/ct');
+        } else if (itemName === 'X-Ray') {
+            navigate('/xray');
+        } else if (itemName === 'Mammography') {
+            navigate('/mammography');
+        } else if (itemName === 'TMT') {
+            navigate('/tmt');
+        }  else if (itemName === 'EEG/ENMG') {
+            navigate('/eeg');
         }
         // ... and so on
     };

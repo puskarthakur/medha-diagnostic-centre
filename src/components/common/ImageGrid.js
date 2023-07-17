@@ -1,6 +1,5 @@
 import React from 'react';
 import './ImageGrid.css'; // CSS file for styling
-
 import { useNavigate } from 'react-router-dom';
 
 
