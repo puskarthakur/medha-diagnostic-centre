@@ -1,66 +1,13 @@
-
-.franchise-row {
-    margin-left: -1.5em;
-    margin-right: -1.5em;
+.partner-heading{
+    background-color:#94ECB3 ;
+    padding: 5px 0px;
+    text-align: center;
 }
-
-.page-content {
-    padding-top: 2.25em;
+.add-card{
+    padding-bottom: 10px !important;
 }
-
-.containerBox {
-    padding: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.partner-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-
-.franchise-why-partner-section {
-    padding-top: 1rem;
-    padding-bottom: 1.3rem;
-}
-
-.section-content h3.sub-heading {
-    font-family: 'latosemibold';
-    font-size: 20px;
-}
-
-.franchise-why-partner-section h3.top-subheading {
-    font-size: 25px;
-}
-
-.section-content > p {
-    font-size: 15px;
-}
-.li {
-    font-size: 15px;
-    font-family: 'latoregular';
-}
-
-.header-content {
-    padding-left: 1.3rem;
-
-}
-
-.bottom-line {
-    border-bottom: 1px solid #F0F0F0;
-    margin: 2rem;
-}
-
-.h3.sub-heading {
-    color: #3a3a3a;
-}
-
-.section-content.normal-content .section-list li {
-    color: #3a3a3a;
-}
-
-.section-padding {
-    padding-left: 4.5rem;
-}
-
-.second-section-padding {
-    margin-top: 2rem;
-    padding: 1rem 5rem 1rem 5rem;
-}
-
-

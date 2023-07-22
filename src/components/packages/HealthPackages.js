@@ -4,11 +4,11 @@ import team from '../../images/team.jpg'
 import Slideshow from "../slideshow/Slideshow";
 import TeamGrid from "../common/TeamGrid";
 import BreadCrumb from "../common/BreadCrumb";
-import './Healthcare.css'
+import './HealthPackages.css'
 
 const slideButtons = [
     {
-        btnName: 'Book Home Sample',
+        btnName: 'Book Package',
         btnPath: '/sample'
     }
 
@@ -67,16 +67,16 @@ const TeamImages = [
 ]
 
 
-export default function Healthcare() {
+export default function HealthPackages() {
 
     return (
         <div style={{ marginTop: '150px' }}>
                       <div>
-<BreadCrumb name="Home" homeLink="/home" comp="HealthCare Services"></BreadCrumb>
+<BreadCrumb name="Home" homeLink="/home" comp="HealthCare Packages"></BreadCrumb>
             </div>
             <div style={{ backgroundColor: '#19A5A0' }}>
             <div className="rs-heading">
-          <h6 className="rs-subheading">HOME HEALTHCARE SERVICES</h6>
+          <h6 className="rs-subheading">HEALTHCARE PACKAGES</h6>
       </div>
       <Slideshow images={slideImages} slideButtons={slideButtons}></Slideshow>
       <div className="px-4">

@@ -12,6 +12,7 @@ import Radiology from '../../images/Radiology.jpg'
 import ImageGrid from "../common/ImageGrid";
 import TeamGrid from "../common/TeamGrid";
 import './Radiology.css';
+import BreadCrumb from "../common/BreadCrumb";
 
 const slideButtons = [
     {
@@ -96,33 +97,41 @@ const TeamImages = [
     {
         img: team,
         name: 'Dr.rao',
-        designation: 'consultant'
+        designation: 'Consultant'
     },
     {
         img: team,
         name: 'Dr.anjali',
-        designation: 'consultant'
+        designation: 'Consultant'
     },
     {
         img: team,
         name: 'Dr.Moni',
-        designation: 'consultant'
+        designation: 'Consultant'
     },
     {
         img: team,
         name: 'Dr.vicky',
-        designation: 'consultant'
+        designation: 'Consultant'
     },
     {
         img: team,
         name: 'Dr.vicky',
-        designation: 'consultant'
+        designation: 'Consultant'
     }
 ]
+
+   
+
 export default function RadiologyService() {
     return (
-        <div style={{ marginTop: '143px', backgroundColor: "#389CA6" }} className="">
-            <div className="rs-heading">
+        <div style={{ marginTop: '143px'}}>
+            <div>
+<BreadCrumb name="Home" homeLink="/home" comp="Radiology & Cardiology Services" ></BreadCrumb>
+            </div>
+       
+       <div style={{backgroundColor: "#389CA6" }}>
+       <div className="rs-heading">
                 <h6 className="rs-subheading">RADIOLOGY & CARDIOLOGY SERVICES</h6>
             </div>
             <Slideshow images={slideImages} slideButtons={slideButtons}></Slideshow>
@@ -132,6 +141,8 @@ export default function RadiologyService() {
                 <TeamGrid images={TeamImages} />
             </div>
 
+       </div>
+        
         </div>
     )
 }

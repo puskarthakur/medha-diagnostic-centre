@@ -10,6 +10,7 @@ import team  from '../../images/team.jpg'
 import Lab from '../../images/Lab.jpg'
 import ImageGrid from "../common/ImageGrid";
 import TeamGrid from "../common/TeamGrid";
+import BreadCrumb from "../common/BreadCrumb";
 import './Lab.css';
 
 const slideButtons = [
@@ -103,9 +104,13 @@ const TeamImages = [
 ]
 export default function LabService() {
     return (
-        <div style={{ marginTop: '143px', backgroundColor: "#389CA6" }} className="">
+        <div style={{ marginTop: '143px' }} className="">
+            <div>
+            <BreadCrumb name="Home" homeLink="/home" comp="Lab Services" ></BreadCrumb>
+            </div>
+            <div style={{backgroundColor: "#389CA6" }}>
             <div className="lab-heading">
-                <h6 className="lab-subheading">Lab Services</h6>
+                <h6 className="lab-subheading">LAB SERVICES</h6>
             </div>
             <Slideshow images={slideImages} slideButtons={slideButtons}></Slideshow>
 
@@ -113,6 +118,8 @@ export default function LabService() {
                 <ImageGrid images={radioImages} />
                 <TeamGrid images={TeamImages} />
             </div>
+            </div>
+      
 
         </div>
     )

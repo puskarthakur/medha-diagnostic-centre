@@ -38,9 +38,10 @@ export function Navbar() {
             <div className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`} aria-labelledby="navbarDropdown">
               <a className="dropdown-item" href="/rs">Radiology Services</a>
               <a className="dropdown-item" href="/lab">Lab Services</a>
-              <a className="dropdown-item" href="care">Home HealthCare</a>
-              <a className="dropdown-item" href="care">Health Packages</a>
-              <a className="dropdown-item" href="care">Medha Advantage Plan</a>
+              <a className="dropdown-item" href="/tolab">Lab To Lab Services</a>
+              <a className="dropdown-item" href="/care">Home HealthCare</a>
+              <a className="dropdown-item" href="/package">Health Packages</a>
+              <a className="dropdown-item" href="/plan">Medha Advantage Plan</a>
             </div>
           </li>
           <li className="nav-item">
