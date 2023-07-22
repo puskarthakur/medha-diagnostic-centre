@@ -23,3 +23,24 @@
     margin-bottom: 0rem !important;
 }
 
+.list-counter {
+    font-family: latobold;
+    font-size: 1.2em;
+    flex: 0 0 2.143em;
+    max-width: 2.143em;
+    height: 2.143em;
+    border-radius: 1.786em;
+    border: 0.179em solid #19A5A0;
+    display: flex;
+    align-items: center;
+    margin-right: 0.857em;
+    justify-content: center;
+    color: #19A5A0;
+    position: relative;
+    left: 35%;
+}
+.card-content{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+}
