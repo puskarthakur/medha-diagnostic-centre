@@ -63,8 +63,8 @@ export default function Advantage() {
     <div style={{ position: 'relative', top: '128px', paddingBottom: "40px" }}>
       <div className="medha-plan">
         <div className=" medha-plan-heading">
-          <h5>MEDHA ADVANTAGE PLAN</h5>
-          <h6>ONE STOP SOLUTION FOR ALL YOUR Health NEEDS</h6>
+          <h6>MEDHA ADVANTAGE PLAN</h6>
+          <h6>ONE STOP SOLUTION FOR ALL YOUR HEALTH NEEDS</h6>
           <div id="menu">
             <ul className='plan-bar'>
               <li> Doctor Consultations</li>
@@ -77,10 +77,18 @@ export default function Advantage() {
             </ul>
           </div>
         </div>
+        <div className="featutre-cards">
+        <Featurecard image={microscope} content="Upto 50% discount on Laboratory Services" ></Featurecard>
+        <Featurecard image={ct_icon} content="Upto 30% discount on Radiology Services" ></Featurecard>
+        <Featurecard image={consult} content="Upto 50% discount on Inhouse Dr Consultations" ></Featurecard>
+        <Featurecard image={medicine} content="Upto 20% discount on Pharmacy Services" ></Featurecard>
+        <Featurecard image={medical_person} content="Home Sample Collection & Ambulance Services" ></Featurecard>
+      </div>
+
         <div className="medha-plan-heading">
           <h5 className="center" >Select a Medha Advantage Plan</h5>
         </div>
-        <div>
+   
           <div className="plan-table">
             <table>
               <tr >
@@ -177,25 +185,6 @@ export default function Advantage() {
             </table>
           </div>
         </div>
-      </div>
-
-      <div className="featutre-cards">
-        <Featurecard image={microscope} content=" 50% discount on Lab Tests" ></Featurecard>
-        <Featurecard image={ct_icon} content=" 30% discount on Radiology" ></Featurecard>
-        <Featurecard image={consult} content=" 50% discount on Consultations" ></Featurecard>
-        <Featurecard image={medicine} content="Free Ambulance within  5kms radius" ></Featurecard>
-        <Featurecard image={medical_person} content="5 Years Validity on plan" ></Featurecard>
-      </div>
-
-
-
-      <div className="featutre-cards">
-
-        {MEDHA_PLAN.map((plan) => (
-          <Plancard title={plan.title} content={plan.content} price={plan.price} key={plan.title} />
-
-        ))}
-      </div>
       <div className="px-4 py-4">
         <h4 className="py-2 ">Frequently Asked Questions</h4>
         <p>To help you navigate our site better and make your shopping experience easier, we have provided answers

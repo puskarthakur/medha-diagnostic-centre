@@ -10,7 +10,8 @@ const TeamGrid = (images) => {
             return(
                 <div className='team-card'>
                 <img src={i.img} className='image' style={{width:'100%'}} alt='medhateam'/>
-                <p className='my-2 doc-name'>{i.name}</p>
+                <p className='doc-name'>{i.name}</p>
+                <p className='doc-name'>{i.designation}</p>
             </div>
             )
             })}

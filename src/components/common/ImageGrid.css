@@ -33,7 +33,6 @@
     align-items: center;
     margin: 15px 0px;
     padding: 0px 5px;
-    background-color: white
 }
 a{
   color: black !important ;
@@ -43,7 +42,7 @@ a{
 a:hover{
   color: none !important;
 }
-img{
+.image{
   border: 2px solid #e6e6e6;;
 }
 .image-card{
