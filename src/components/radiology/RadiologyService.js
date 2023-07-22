@@ -95,23 +95,28 @@ const radioImages = [
 const TeamImages = [
     {
         img: team,
-        name: 'Dr.rao'
+        name: 'Dr.rao',
+        designation: 'consultant'
     },
     {
         img: team,
-        name: 'Dr.anjali'
+        name: 'Dr.anjali',
+        designation: 'consultant'
     },
     {
         img: team,
-        name: 'Dr.Moni'
+        name: 'Dr.Moni',
+        designation: 'consultant'
     },
     {
         img: team,
-        name: 'Dr.vicky'
+        name: 'Dr.vicky',
+        designation: 'consultant'
     },
     {
         img: team,
-        name: 'Dr.vicky'
+        name: 'Dr.vicky',
+        designation: 'consultant'
     }
 ]
 export default function RadiologyService() {

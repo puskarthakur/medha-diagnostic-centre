@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 
 
 
-export default function Featurecard(props) {
+export default function Plancard(props) {
   const dispatch = useDispatch();
   const navigate = useNavigate()
     return (
