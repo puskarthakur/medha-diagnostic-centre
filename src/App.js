@@ -34,6 +34,10 @@ import Tmt from './components/radiology/Tmt';
 import Ultrasound from './components/radiology/Ultrasound';
 import HealthPackages from './components/packages/HealthPackages';
 import LabtoLabService from './components/lab/LabtoLabService';
+import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
+
+
 
 function App() {
   return (
@@ -42,7 +46,7 @@ function App() {
       <Header></Header>
       {/* <StaticCard></StaticCard> */}
       <Routes>
-        <Route path="/home" exact element={<Home />}></Route>
+        <Route path="/" exact element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/appoint" element={<Appointment />}></Route>
         <Route path="/sample" element={<Sample />}></Route>
@@ -72,6 +76,8 @@ function App() {
         <Route path='/ct' element={<CTScan/>} ></Route>
         <Route path="/package" element={<HealthPackages/>}></Route>
         <Route path="/tolab" element={<LabtoLabService/>}></Route>
+        <Route path="/contact" element={<Contact/>}></Route>
+        <Route path="/footer" element={<Footer/>}></Route>
       </Routes>
     </div>
   );

@@ -127,7 +127,7 @@ export default function RadiologyService() {
     return (
         <div style={{ marginTop: '143px'}}>
             <div>
-<BreadCrumb name="Home" homeLink="/home" comp="Radiology & Cardiology Services" ></BreadCrumb>
+<BreadCrumb name="Home" homeLink="/" comp="Radiology & Cardiology Services" ></BreadCrumb>
             </div>
        
        <div style={{backgroundColor: "#389CA6" }}>

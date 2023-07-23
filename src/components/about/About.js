@@ -2,6 +2,7 @@ import React from "react";
 import './About.css';
 import BreadCrumb from "../common/BreadCrumb";
 import logoName from '../../images/medha_name_logo.jpg'
+import medhateam from '../../images/team.jpg'
 import logo from '../../images/medha_logo.jpg'
 import CardContent from '@mui/material/CardContent';
 import Card from '@mui/material/Card';
@@ -10,6 +11,8 @@ import Carousel from "../common/carousel/Carousel";
 import aboutTeam from '../../images/aboutTeam.jpg'
 import mbc from '../../images/microbiology.jpg'
 import cert from '../../images/cert.jpg'
+import Contact from "../contact/Contact";
+import Servicecard from "../servicecard/Servicecard";
 
 
 const INFRA_ARR=[
@@ -51,9 +54,9 @@ const Card_Content = [{
 }]
 export default function About() {
     return (
-        <div style={{ marginTop: '143px', marginBottom: '30px' }}>
+        <div style={{ marginTop: '143px', marginBottom: '30px', overflow: "hidden" }}>
             <div>
-                <BreadCrumb name="Home" homeLink="/home" comp="About Us" ></BreadCrumb>
+                <BreadCrumb name="Home" homeLink="/" comp="About Us" ></BreadCrumb>
             </div>
             <div className="text-center">
                 <h4>ABOUT US</h4>
@@ -62,7 +65,8 @@ export default function About() {
                 <img src={logo} alt="medha_logo" width={300} height={200} />
                 <img src={logoName} alt="medha_logo" width={400} height={200} />
             </div>
-            <div className="px-4 py-4 mx-4 content">
+      <div style={{backgroundColor: "F2F2F2"}}>
+      <div className="px-4 py-4 mx-4 about-content">
                 <p>Welcome to Medha Diagnostic Centre, your trusted destination for
                     comprehensive and advanced diagnostics in Nellore. Discover why Medha stands out as the preferred
                     choice for all your healthcare needs.</p>
@@ -115,7 +119,7 @@ export default function About() {
                     convenience, and personalized care. Your health is precious, and we are here to support you on your journey to wellness.
                 </p>
             </div>
-            <div className="card-content">
+            <div className="card-content pb-4">
                 {
                     Card_Content.map((i, index) => {
                         return (
@@ -134,12 +138,18 @@ export default function About() {
                     })
                 }
             </div>
+        
+        <div>
+            <Servicecard></Servicecard>
+        </div>
+
             <div className="py-4">
                 <h6 className="text-center about-heading">Infrastructure</h6>
                 {
                     INFRA_ARR.map((i, index) => {
                         return (
-                            <div className="row px-4">
+                            <div>
+                                     <div className="row px-4">
                             <div className="col-4">
                                 <p className="text-center">MRI</p>
                                 <img src={i.img} style={{ width: '100%' }}></img>
@@ -148,6 +158,13 @@ export default function About() {
                                 <p>{i.content}</p>
                             </div>
                         </div>
+                        <div className="row px-4">
+                            <div className="col-12">
+                                <hr></hr>
+                            </div>
+                        </div>
+                            </div>
+                       
                         )
                     })
                 }
@@ -161,35 +178,35 @@ export default function About() {
                     >
                         <div>
                             <div style={{ padding: 8 }}>
-                                <img src={aboutTeam} alt="placeholder" style={{ width: '100%' }} />
+                                <img src={medhateam} alt="placeholder" style={{ width: '100%' }} />
                                 <p className="text-center  mb-0 mt-2">DR RAO</p>
                                 <p className="text-center  mb-0">Cardilogist</p>
                             </div>
                         </div>
                         <div>
                             <div style={{ padding: 8 }}>
-                                <img src={aboutTeam} alt="placeholder" style={{ width: '100%' }} />
+                                <img src={medhateam} alt="placeholder" style={{ width: '100%' }} />
                                 <p className="text-center  mb-0 mt-2">DR RAO</p>
                                 <p className="text-center  mb-0">Cardilogist</p>
                             </div>
                         </div>
                         <div>
                             <div style={{ padding: 8 }}>
-                                <img src={aboutTeam} alt="placeholder" style={{ width: '100%' }} />
+                                <img src={medhateam} alt="placeholder" style={{ width: '100%' }} />
                                 <p className="text-center  mb-0 mt-2">DR RAO</p>
                                 <p className="text-center  mb-0">Cardilogist</p>
                             </div>
                         </div>
                         <div>
                             <div style={{ padding: 8 }}>
-                                <img src={aboutTeam} alt="placeholder" style={{ width: '100%' }} />
+                                <img src={medhateam} alt="placeholder" style={{ width: '100%' }} />
                                 <p className="text-center  mb-0 mt-2">DR RAO</p>
                                 <p className="text-center  mb-0">Cardilogist</p>
                             </div>
                         </div>
                         <div>
                             <div style={{ padding: 8 }}>
-                                <img src={aboutTeam} alt="placeholder" style={{ width: '100%' }} />
+                                <img src={medhateam} alt="placeholder" style={{ width: '100%' }} />
                                 <p className="text-center  mb-0 mt-2">DR RAO</p>
                                 <p className="text-center  mb-0">Cardilogist</p>
                             </div>
@@ -201,26 +218,26 @@ export default function About() {
 
             <div className="py-4">
                 <h6 className="text-center about-heading">Accrediations & Certifications</h6>
-                <div style={{ maxWidth: 1200, marginLeft: 'auto', marginRight: 'auto', marginTop: 10 }}>
+                <div style={{ maxWidth: 800, marginLeft: 'auto', marginRight: 'auto', marginTop: 10 }}>
                     <Carousel
                         show={2}
                     >
                         <div>
                             <div style={{ padding: 8 }}>
                                 <p className="text-center">title 1</p>
-                                <img src={cert} alt="placeholder" style={{ width: '100%' }} />
+                                <img src={medhateam} alt="placeholder" style={{ width: '100%' }} />
                             </div>
                         </div>
                         <div>
                             <div style={{ padding: 8 }}>
                                 <p className="text-center">title 2</p>
-                                <img src={cert} alt="placeholder" style={{ width: '100%' }} />
+                                <img src={medhateam} alt="placeholder" style={{ width: '100%' }} />
                             </div>
                         </div>
                         <div>
                             <div style={{ padding: 8 }}>
                                 <p className="text-center">title 3</p>
-                                <img src={cert} alt="placeholder" style={{ width: '100%' }} />
+                                <img src={medhateam} alt="placeholder" style={{ width: '100%' }} />
                             </div>
                         </div>
 
@@ -262,6 +279,10 @@ export default function About() {
                     </Carousel>
                 </div>
             </div>
+            <div>
+                <Contact></Contact>
+            </div>
+      </div>
         </div>
     )
 }

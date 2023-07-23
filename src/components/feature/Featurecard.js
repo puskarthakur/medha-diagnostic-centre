@@ -22,7 +22,7 @@ export default function Featurecard(props) {
         <img src={props.image} width={50} height={50} alt="medhaImages"></img>
         </div>
        
-        <CardContent  className="card-text">
+        <CardContent  className="feature-card-text">
          
          {props.content}
        

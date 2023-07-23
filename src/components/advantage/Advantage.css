@@ -38,11 +38,12 @@ table {
   width: 80%;
 }
 
-td, th {
-  border: 1px solid #dddddd !important;
+ td, th {
+  border:  1px solid black !important;
   text-align: center;
   padding: 4px;
 }
+
 
 .plan-table{
   text-align: center;
@@ -71,4 +72,9 @@ font-weight: bold !important;
   background-color: rgb(63, 201, 63) !important;
   color: #fff !important;
   font-size: 0.8rem !important;
+}
+.ques-content{
+  font-size: 1.1rem;
+  font-family: math;
+  line-height: 1.6;
 }

@@ -1,0 +1,13 @@
+.contact-heading{
+    background-color:#94ECB3 ;
+    padding: 5px 0px;
+    text-align: center;
+}
+.add-card{
+    padding-bottom: 5px !important;
+}
+.contact-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

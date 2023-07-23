@@ -106,7 +106,7 @@ export default function LabService() {
     return (
         <div style={{ marginTop: '143px' }} className="">
             <div>
-            <BreadCrumb name="Home" homeLink="/home" comp="Lab Services" ></BreadCrumb>
+            <BreadCrumb name="Home" homeLink="/" comp="Lab Services" ></BreadCrumb>
             </div>
             <div style={{backgroundColor: "#389CA6" }}>
             <div className="lab-heading">

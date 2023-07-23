@@ -1,13 +1,21 @@
-.partner-heading{
-    background-color:#94ECB3 ;
-    padding: 5px 0px;
-    text-align: center;
+.about-content{
+    font-size: 1.1rem;
+    font-family: math;
+    line-height: 1.6;
+
 }
-.add-card{
-    padding-bottom: 10px !important;
-}
-.partner-content{
+.card-content{
+    justify-content: space-evenly;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+
+}
+.card-text{
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
+    color: black !important;
+}
+.about-heading{
+    background-color:#94ECB3 ;
+    padding: 5px 0px;
 }

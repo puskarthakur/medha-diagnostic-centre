@@ -7,7 +7,7 @@ import DonutChart from '../charts/DonutChart';
 export default function Servicecard() {
     const items = ['LAB', 'Ultrasound', 'CT Scan', 'MRI', 'X-Ray', 'Mammography', 'TMT', 'EEG/ENMG'];
     return (
-        <div className="service mb-4">
+        <div className="service">
 
             <div className="service-heading py-2">
                 <h2>Services</h2>
@@ -20,25 +20,28 @@ export default function Servicecard() {
                 <div className="row">
                     <div className="col-2 item1">
                     <div>
-                        <Amenity iconClass={faMicroscope} name="Corporate wellness Program" />
+                        <Amenity iconClass={faMicroscope} name="Radiology & Cardiology Services" />
                     </div>
                     </div>
                   
                     <div className="col-2">
                         <div>
-                            <Amenity iconClass={faMicroscope} name="Corporate wellness Program" />
+                            <Amenity iconClass={faMicroscope} name="Lab Services" />
                         </div>
                     </div>
                     <div className="col-2 item1">
-                        <Amenity iconClass={faMicroscope} name="Corporate wellness Program" />
+                        <Amenity iconClass={faMicroscope} name="Lab to Lab Services" />
                     </div>
                     <div className="col-2  item2">
                         <div >
-                            <Amenity iconClass={faMicroscope} name="Corporate wellness Program" />
+                            <Amenity iconClass={faMicroscope} name="Home HealthCare Services" />
                         </div>
                     </div>
                     <div className="col-2 item1">
-                        <Amenity iconClass={faMicroscope} name="Corporate wellness Program" />
+                        <Amenity iconClass={faMicroscope} name="Health Packages" />
+                    </div>
+                    <div className="col-2 item1">
+                        <Amenity iconClass={faMicroscope} name="Medha Advantage Plan" />
                     </div>
                 </div>
 

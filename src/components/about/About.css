@@ -1,12 +1,14 @@
-.content{
+.about-content{
     font-size: 1.1rem;
     font-family: math;
     line-height: 1.6;
+
 }
 .card-content{
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;
+
 }
 .card-text{
     font-weight: 600 !important;
